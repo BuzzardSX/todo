@@ -1,13 +1,13 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { CaseReducer, PayloadAction } from '@reduxjs/toolkit';
 import { Todo } from './types';
+import reducers from './reducers';
 
-interface State {
-	Todos: Todo[];
+export interface State {
+	items: Todo[];
 }
 
 const initialState: State = {
-	Todos: [
+	items: [
 		{
 			text: '111 text',
 			isCompleted: true
@@ -15,21 +15,12 @@ const initialState: State = {
 	]
 };
 
-export const addTodo: CaseReducer<State, PayloadAction<string>> = (state, action) => {
-	state.Todos.push({
-		text: action.payload,
-		isCompleted: false
-	});
-};
-
-const slice = createSlice({
+const todo = createSlice({
 	name: 'todo',
 	initialState,
-	reducers: {
-		addTodo
-	}
+	reducers
 });
 
 export { default as List } from './List';
 
-export default slice.reducer;
+export default todo;
