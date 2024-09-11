@@ -1,8 +1,11 @@
 import { createElement } from 'react';
 
-const Element = createElement(
-	'div',
-	{}
-);
+const Element = () => {
+	return createElement(
+		'div',
+		{},
+		'Element'
+	);
+};
 
 export default Element;
