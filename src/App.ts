@@ -1,6 +1,6 @@
 import { createElement } from 'react';
-import { TodoList } from './features';
+import { TodoBoard } from './features';
 
-const App = () => createElement(TodoList);
+const App = () => createElement(TodoBoard);
 
 export default App;
