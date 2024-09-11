@@ -1,9 +1,9 @@
 import { createElement } from 'react';
 
-const Element = () => createElement(
+const TodoItem = () => createElement(
 	'div',
 	null,
-	'Element'
+	'TodoItem'
 );
 
-export default Element;
+export default TodoItem;
