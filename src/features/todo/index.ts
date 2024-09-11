@@ -1,8 +1,8 @@
 import { combineReducers } from '@reduxjs/toolkit';
-import * as boardSlice from './board';
+import todoBoardSlice from './board/todoBoardSlice';
 
 export const reducer = combineReducers({
-	[boardSlice.reducerPath]: boardSlice.reducer
+	[todoBoardSlice.reducerPath]: todoBoardSlice.reducer
 });
 
 export const reducerPath = 'todo';
