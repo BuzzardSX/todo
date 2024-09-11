@@ -2,7 +2,9 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const slice = createSlice({
 	name: 'todoBoard',
-	initialState: {},
+	initialState: {
+		lists: [1, 2, 3]
+	},
 	reducers: {}
 });
 
