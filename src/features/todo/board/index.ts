@@ -1,13 +1,5 @@
-import { createSlice } from '@reduxjs/toolkit';
+import todoBoardSlice from './todoBoardSlice';
 
-const slice = createSlice({
-	name: 'todoBoard',
-	initialState: {
-		lists: [1, 2, 3]
-	},
-	reducers: {}
-});
-
-export const { reducerPath, reducer } = slice;
+export const { reducer, reducerPath } = todoBoardSlice;
 
 export { TodoBoard as default } from './ui';
