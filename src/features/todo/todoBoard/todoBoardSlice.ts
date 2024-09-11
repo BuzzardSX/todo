@@ -1,11 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-const slice = createSlice({
+export const slice = createSlice({
 	name: 'todoBoard',
 	initialState: {},
 	reducers: {}
 });
-
-export {
-	slice
-};
