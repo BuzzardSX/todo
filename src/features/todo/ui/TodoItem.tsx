@@ -1,7 +1,5 @@
-const TodoItem = () => {
-	return (
-		<div>TodoItem</div>
-	);
-};
+const TodoItem = () => (
+	<div>TodoItem</div>
+);
 
 export default TodoItem;
