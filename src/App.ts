@@ -1,5 +1,5 @@
 import { createElement } from 'react';
-import { TodoList } from './features/todo/ui';
+import { TodoList } from './features';
 
 const App = () => createElement(TodoList);
 
