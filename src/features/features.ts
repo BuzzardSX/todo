@@ -1,3 +1,3 @@
 import { lazy } from 'react';
 
-export const TodoBoard = lazy(() => import('./todoBoard'));
+export const TodoBoard = lazy(() => import('./todo/todoBoard'));
