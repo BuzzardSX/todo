@@ -1,10 +1,10 @@
 import { Provider } from 'react-redux';
 import store from './store';
-import { TodoItem } from './features/todo/ui';
+import { TodoList } from './features/todo/ui';
 
 const App = () => (
 	<Provider store={store}>
-		<TodoItem />
+		<TodoList />
 	</Provider>
 );
 
