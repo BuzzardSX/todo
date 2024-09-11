@@ -1,5 +1,5 @@
 import { createElement } from 'react';
-import { TodoItem } from '../ui';
+import { TodoList } from '../ui';
 
 const TodoBoard = () => {
 	const lists = [1, 2, 3];
@@ -8,7 +8,7 @@ const TodoBoard = () => {
 		'div',
 		null,
 		lists.map(
-			() => createElement(TodoItem)
+			() => createElement(TodoList)
 		)
 	)
 };
