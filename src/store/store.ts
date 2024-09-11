@@ -1,9 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
-import * as board from '../features/todo/board';
+import * as todo from '../features/todo';
 
 const store = configureStore({
 	reducer: {
-		[board.reducerPath]: board.reducer
+		[todo.reducerPath]: todo.reducer
 	}
 });
 
