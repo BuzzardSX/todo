@@ -1,13 +1,14 @@
 import { createElement } from 'react';
 import { TodoList } from '../ui';
+import { useTodoBoardSelector } from '../slice/todoBoardSlice';
 
 const TodoBoard = () => {
-	const lists = [1, 2, 3];
+	const listIds = useTodoBoardSelector((state) => state.listIds);
 
 	return createElement(
 		'div',
 		null,
-		lists.map(
+		listIds.map(
 			() => createElement(TodoList)
 		)
 	)
