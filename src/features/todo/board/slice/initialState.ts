@@ -1,8 +1,6 @@
-interface InitialState {
-	lists: number[];
-}
+import type { TodoBoardState } from './todoBoardSlice';
 
-const initialState: InitialState = {
+const initialState: TodoBoardState = {
 	lists: [4, 5, 6]
 };
 
