@@ -1,5 +1,4 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { useSelector } from 'react-redux';
 
 interface TodoBoardState {
 	listIds: number[];
@@ -14,8 +13,6 @@ const todoBoardSlice = createSlice({
 	initialState,
 	reducers: {}
 });
-
-export const useTodoBoardSelector = useSelector.withTypes<TodoBoardState>();
 
 export default todoBoardSlice;
 
