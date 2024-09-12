@@ -1,9 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
-import featuresSlice from '../features/featuresSlice';
+import todoSlice from '../features/todo/todoSlice';
 
 const store = configureStore({
 	reducer: {
-		[featuresSlice.reducerPath]: featuresSlice.reducer
+		[todoSlice.reducerPath]: todoSlice.reducer
 	}
 });
 
