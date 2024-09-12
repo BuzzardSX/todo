@@ -1,9 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
-import todoSlice from '../features/todo/todoSlice';
+import todoBoardSlice from '../features/todo/board/todoBoardSlice';
 
 const store = configureStore({
 	reducer: {
-		[todoSlice.reducerPath]: todoSlice.reducer
+		[todoBoardSlice.reducerPath]: todoBoardSlice.reducer
 	}
 });
 
