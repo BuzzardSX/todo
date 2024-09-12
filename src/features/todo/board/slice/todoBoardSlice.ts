@@ -1,11 +1,11 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 interface TodoBoardState {
-	lists: number[];
+	listIds: number[];
 }
 
 const initialState: TodoBoardState = {
-	lists: [4, 5, 6]
+	listIds: [4, 5, 6]
 };
 
 const todoBoardSlice = createSlice({
