@@ -9,7 +9,7 @@ const TodoBoard = () => {
 		'div',
 		null,
 		listIds.map(
-			() => createElement(TodoList)
+			(id) => createElement(TodoList, { id })
 		)
 	)
 };

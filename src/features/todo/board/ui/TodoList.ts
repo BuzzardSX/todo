@@ -1,7 +1,7 @@
 import { createElement } from 'react';
 import { TodoItem } from '../ui';
 
-const TodoList = () => {
+const TodoList = ({ id }: { id: number }) => {
 	const items = [1, 2, 3];
 
 	return createElement(
