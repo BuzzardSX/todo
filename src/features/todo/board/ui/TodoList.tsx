@@ -1,4 +1,3 @@
-import { createElement } from 'react';
 import { useAppSelector } from '../../../../store';
 import { TodoItem } from '../ui';
 
@@ -9,17 +8,15 @@ interface TodoListProps {
 const TodoList = ({ id }: TodoListProps) => {
 	const list = useAppSelector((state) => state.todoBoard.lists.find((list) => list.id == id));
 
-	return createElement(
-		'div',
-		null,
-		createElement('div', null, list.title),
-		createElement(
-			'div',
-			null,
-			list.items.map(
-				({ id }) => createElement(TodoItem, { key: id })
-			)
-		)
+	return (
+		<div>
+			<div>{list.title}</div>
+			<div>
+				{list.items.map(
+					({ id }) => <TodoItem key={id} />
+				)}
+			</div>
+		</div>
 	);
 };
 
