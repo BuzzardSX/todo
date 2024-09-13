@@ -13,8 +13,12 @@ const TodoList = ({ id }: TodoListProps) => {
 		'div',
 		null,
 		createElement('div', null, list.title),
-		list.items.map(
-			({ id }) => createElement(TodoItem, { key: id })
+		createElement(
+			'div',
+			null,
+			list.items.map(
+				({ id }) => createElement(TodoItem, { key: id })
+			)
 		)
 	);
 };
