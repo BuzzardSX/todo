@@ -1,4 +1,5 @@
 import { createElement } from 'react';
+import { useAppSelector } from '../../../../store';
 import { TodoItem } from '../ui';
 
 interface TodoListProps {
@@ -6,13 +7,13 @@ interface TodoListProps {
 }
 
 const TodoList = ({ id }: TodoListProps) => {
-	const items = [1, 2, 3];
+	const items = useAppSelector((state) => state.todoBoard.lists.find((list) => list.id == id).items);
 
 	return createElement(
 		'div',
 		null,
 		items.map(
-			() => createElement(TodoItem)
+			({ id }) => createElement(TodoItem, { key: id })
 		)
 	);
 };

@@ -9,17 +9,17 @@ const initialState: TodoBoardState = {
 	lists: [
 		{
 			id: 1,
-			title: '',
+			title: 'List One',
 			items: []
 		},
 		{
 			id: 2,
-			title: '',
+			title: 'List Two',
 			items: []
 		},
 		{
 			id: 3,
-			title: '',
+			title: 'List Three',
 			items: []
 		}
 	]
