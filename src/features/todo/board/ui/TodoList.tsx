@@ -1,9 +1,9 @@
-import { useAppSelector } from '../../../../store';
+import { useList } from '../hooks';
 import { TodoItem } from '../ui';
 import type { TodoListProps } from '../ui';
 
 const TodoList = ({ id }: TodoListProps) => {
-	const list = useAppSelector((state) => state.todoBoard.lists.find((list) => list.id == id));
+	const list = useList(id);
 
 	return (
 		<div>
