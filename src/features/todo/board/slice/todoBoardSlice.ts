@@ -1,15 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-
-interface TodoItem {
-	id: number;
-	text: string;
-}
-
-interface TodoList {
-	id: number;
-	title: string;
-	items: TodoItem[];
-}
+import type { TodoList } from '../todoBoardFeature';
 
 interface TodoBoardState {
 	lists: TodoList[];
