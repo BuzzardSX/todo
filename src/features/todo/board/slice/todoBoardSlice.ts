@@ -33,4 +33,4 @@ const todoBoardSlice = createSlice({
 
 export default todoBoardSlice;
 
-export type { TodoBoardState }
+export type { TodoBoardState };
