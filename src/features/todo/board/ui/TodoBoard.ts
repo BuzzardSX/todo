@@ -3,13 +3,13 @@ import { useAppSelector } from '../../../../store';
 import { TodoList } from '../ui';
 
 const TodoBoard = () => {
-	const listIds = useAppSelector((state) => state.todoBoard.listIds);
+	const lists = useAppSelector((state) => state.todoBoard.lists);
 
 	return createElement(
 		'div',
 		null,
-		listIds.map(
-			(id) => createElement(TodoList, { id })
+		lists.map(
+			({ id }) => createElement(TodoList, { id, key: id })
 		)
 	)
 };
