@@ -7,12 +7,13 @@ interface TodoListProps {
 }
 
 const TodoList = ({ id }: TodoListProps) => {
-	const items = useAppSelector((state) => state.todoBoard.lists.find((list) => list.id == id).items);
+	const list = useAppSelector((state) => state.todoBoard.lists.find((list) => list.id == id));
 
 	return createElement(
 		'div',
 		null,
-		items.map(
+		createElement('div', null, list.title),
+		list.items.map(
 			({ id }) => createElement(TodoItem, { key: id })
 		)
 	);
