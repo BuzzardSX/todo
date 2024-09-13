@@ -1,9 +1,6 @@
 import { useAppSelector } from '../../../../store';
 import { TodoItem } from '../ui';
-
-interface TodoListProps {
-	id: number;
-}
+import type { TodoListProps } from '../ui';
 
 const TodoList = ({ id }: TodoListProps) => {
 	const list = useAppSelector((state) => state.todoBoard.lists.find((list) => list.id == id));
