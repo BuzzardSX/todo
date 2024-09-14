@@ -2,7 +2,7 @@ import { TodoList } from '../ui';
 import { useBoard } from '../hooks';
 
 const TodoBoard = () => {
-	const { lists, addList } = useBoard();
+	const { lists, addList, removeLastList } = useBoard();
 
 	return (
 		<div>
@@ -11,7 +11,8 @@ const TodoBoard = () => {
 					({ id }) => <TodoList id={id} key={id} />
 				)}
 			</div>
-			<div onClick={() => addList('A New One')}>Click me!</div>
+			<div onClick={() => addList('Add a new one')}>Add a new one</div>
+			<div onClick={() => removeLastList()}>Remoe last one</div>
 		</div>
 	);
 };
