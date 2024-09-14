@@ -28,7 +28,10 @@ const initialState: TodoBoardState = {
 const todoBoardSlice = createSlice({
 	name: 'todoBoard',
 	initialState,
-	reducers: {}
+	reducers: {},
+	selectors: {
+		selectList: (state, id: number) => state.lists.find((list) => list.id == id)
+	}
 });
 
 export default todoBoardSlice;
