@@ -1,9 +1,8 @@
 import { useAppSelector } from '../../../store';
+import slice from './slice';
 
 export const useList = (id: number) => {
-	const list = useAppSelector(
-		(state) => state.todoBoard.lists.find((list) => list.id == id)
-	);
+	const list = useAppSelector((state) => slice.selectors.selectList(state, id));
 
 	return list;
 };
