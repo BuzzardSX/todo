@@ -1,12 +1,12 @@
-import { useAppSelector } from '../../../../app/store';
 import { TodoList } from '../ui';
+import { useBoard } from '../hooks';
 
 const TodoBoard = () => {
-	const lists = useAppSelector((state) => state.todoBoard.lists);
+	const board = useBoard();
 
 	return (
 		<div>
-			{lists.map(
+			{board.lists.map(
 				({ id }) => <TodoList id={id} key={id} />
 			)}
 		</div>
