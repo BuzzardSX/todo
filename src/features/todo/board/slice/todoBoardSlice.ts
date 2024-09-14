@@ -10,7 +10,12 @@ const initialState: TodoBoardState = {
 		{
 			id: 1,
 			title: 'List One',
-			items: []
+			items: [
+				{
+					id: 1,
+					text: 'One'
+				}
+			]
 		},
 		{
 			id: 2,
