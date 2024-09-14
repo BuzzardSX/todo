@@ -2,12 +2,12 @@ import { TodoList } from '../ui';
 import { useBoard } from '../hooks';
 
 const TodoBoard = () => {
-	const { board, addList } = useBoard();
+	const { lists, addList } = useBoard();
 
 	return (
 		<div>
 			<div>
-				{board.lists.map(
+				{lists.map(
 					({ id }) => <TodoList id={id} key={id} />
 				)}
 			</div>
