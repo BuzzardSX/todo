@@ -3,13 +3,13 @@ import { TodoItem } from '../ui';
 import type { TodoListProps } from '../ui';
 
 const TodoList = ({ id }: TodoListProps) => {
-	const list = useList(id);
+	const { title, items } = useList(id);
 
 	return (
 		<div>
-			<div>{list.title}</div>
+			<div>{title}</div>
 			<div>
-				{list.items.map(
+				{items.map(
 					({ id }) => <TodoItem key={id} />
 				)}
 			</div>

@@ -13,7 +13,7 @@ export const useBoard = () => {
 }
 
 export const useList = (id: number) => {
-	const list = useAppSelector((state) => slice.selectors.selectList(state, id));
+	const { title, items } = useAppSelector((state) => slice.selectors.selectList(state, id));
 
-	return list;
+	return { title, items };
 };
