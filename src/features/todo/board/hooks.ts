@@ -1,4 +1,4 @@
-import { useAppSelector } from '../../../store';
+import { useAppSelector } from '../../../app/store';
 import slice from './slice';
 
 export const useList = (id: number) => {
