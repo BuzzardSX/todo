@@ -50,6 +50,9 @@ const todoBoardSlice = createSlice({
 				title: payload,
 				items: []
 			});
+		},
+		removeLastList: (state) => {
+			state.lists.pop();
 		}
 	},
 	selectors: {
