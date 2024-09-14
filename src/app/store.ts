@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import todoBoardSlice from '../features/todo/board/slice';
 
 const store = configureStore({
@@ -10,6 +10,10 @@ const store = configureStore({
 
 type RootState = ReturnType<typeof store.getState>
 
+type AppDispatch = typeof store.dispatch
+
 export const useAppSelector = useSelector.withTypes<RootState>();
+
+export const useAppDispatcher = useDispatch.withTypes<AppDispatch>();
 
 export default store;
