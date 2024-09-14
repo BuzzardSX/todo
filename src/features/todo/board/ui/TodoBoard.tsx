@@ -10,7 +10,7 @@ const TodoBoard = () => {
 				({ id }) => <TodoList id={id} key={id} />
 			)}
 		</div>
-	)
+	);
 };
 
 export default TodoBoard;
