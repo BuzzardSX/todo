@@ -42,7 +42,15 @@ const initialState: TodoBoardState = {
 const todoBoardSlice = createSlice({
 	name: 'todoBoard',
 	initialState,
-	reducers: {},
+	reducers: {
+		addList: (state) => {
+			state.lists.push({
+				id: Date.now(),
+				title: 'Hz',
+				items: []
+			});
+		}
+	},
 	selectors: {
 		selectList: (state, id: number) => state.lists.find((list) => list.id == id)
 	}
