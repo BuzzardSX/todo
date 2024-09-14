@@ -11,7 +11,7 @@ const TodoBoard = () => {
 					({ id }) => <TodoList id={id} key={id} />
 				)}
 			</div>
-			<div onClick={addList}>Click me!</div>
+			<div onClick={() => addList('A New One')}>Click me!</div>
 		</div>
 	);
 };

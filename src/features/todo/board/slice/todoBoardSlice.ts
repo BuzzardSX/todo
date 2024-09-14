@@ -1,4 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
+import type { PayloadAction } from '@reduxjs/toolkit';
 import type { TodoList } from '../todoBoardFeature';
 
 interface TodoBoardState {
@@ -43,10 +44,10 @@ const todoBoardSlice = createSlice({
 	name: 'todoBoard',
 	initialState,
 	reducers: {
-		addList: (state) => {
+		addList: (state, { payload }: PayloadAction<string>) => {
 			state.lists.push({
 				id: Date.now(),
-				title: 'Hz',
+				title: payload,
 				items: []
 			});
 		}

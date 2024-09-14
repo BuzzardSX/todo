@@ -8,7 +8,7 @@ export const useBoard = () => {
 
 	return {
 		lists,
-		addList: () => dispatch(slice.actions.addList())
+		addList: (title) => dispatch(slice.actions.addList(title))
 	};
 }
 
