@@ -2,7 +2,7 @@ import { TodoList } from '../ui';
 import { useBoard } from '../hooks';
 
 const TodoBoard = () => {
-	const board = useBoard();
+	const { board } = useBoard();
 
 	return (
 		<div>

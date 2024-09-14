@@ -1,10 +1,15 @@
-import { useAppSelector } from '../../../app/store';
+import { useAppSelector, useAppDispatcher } from '../../../app/store';
 import slice from './slice';
 
 export const useBoard = () => {
 	const board = useAppSelector(slice.selectSlice);
 
-	return board;
+	const dispatch = useAppDispatcher();
+
+	return {
+		board,
+		addList: () => dispatch(slice.actions.addList())
+	};
 }
 
 export const useList = (id: number) => {
