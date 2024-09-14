@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { useSelector } from 'react-redux';
-import todoBoardSlice from './features/todo/board/slice';
+import todoBoardSlice from '../features/todo/board/slice';
 
 const store = configureStore({
 	reducer: {
