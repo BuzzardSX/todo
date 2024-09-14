@@ -1,4 +1,4 @@
-import { useAppSelector } from '../../../../store';
+import { useAppSelector } from '../../../../app/store';
 import { TodoList } from '../ui';
 
 const TodoBoard = () => {
