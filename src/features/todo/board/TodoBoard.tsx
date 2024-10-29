@@ -1,5 +1,5 @@
-import { TodoList } from '../ui';
-import { useBoard } from '../hooks';
+import { TodoList } from './ui';
+import { useBoard } from './hooks';
 
 const TodoBoard = () => {
 	const { lists, addList, removeLastList } = useBoard();
