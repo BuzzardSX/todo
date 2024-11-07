@@ -9,7 +9,4 @@ interface TodoList {
 	items: TodoItem[];
 }
 
-export type {
-	TodoItem,
-	TodoList
-}
+export type { TodoItem, TodoList }

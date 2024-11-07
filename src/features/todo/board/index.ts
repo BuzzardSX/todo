@@ -1,1 +1,1 @@
-export { TodoBoard as default } from './ui';
+export { default } from './TodoBoard';
