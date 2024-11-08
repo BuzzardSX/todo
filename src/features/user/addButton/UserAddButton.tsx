@@ -1,17 +1,26 @@
-import { Button } from 'antd-mobile';
+import { Button, Modal } from 'antd-mobile';
 import { UserForm } from '~/forms';
-import { useFormInitialValues } from './hooks';
+import {
+	useFormInitialValues,
+	useModalVisibility
+} from './hooks';
 
 const UserAddButton = () => {
+	const [modalVisible, modalShow] = useModalVisibility();
+
 	const formInitialValues = useFormInitialValues();
 
 	return (
 		<div>
 			<div>
-				<Button color='primary'>Add user</Button>
+				<Button color='primary' onClick={modalShow}>Add user</Button>
 			</div>
 			<div>
-				<UserForm initialValues={formInitialValues} />
+				<Modal
+					content={(
+						<UserForm initialValues={formInitialValues} />
+					)}
+					visible={modalVisible} />
 			</div>
 		</div>
 	);

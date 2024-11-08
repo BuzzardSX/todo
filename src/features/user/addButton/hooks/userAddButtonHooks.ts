@@ -10,7 +10,7 @@ type Action = Show | Hide;
 
 type ModalVisibility = [boolean, () => void, () => void];
 
-export const userModalVisibility: () => ModalVisibility = () => {
+export const useModalVisibility: () => ModalVisibility = () => {
 	const [state, dispatch] = useReducer(
 		(state: State, action: Action): State => {
 			switch (action.type) {
