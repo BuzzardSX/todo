@@ -7,7 +7,11 @@ const initialState = {
 const homeSlice = createSlice({
 	name: 'home',
 	initialState,
-	reducers: {}
+	reducers: {
+		userModalShow: (state) => {
+			state.userModalVisible = true;
+		}
+	}
 });
 
 export default homeSlice;
