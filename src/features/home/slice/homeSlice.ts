@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-	userModalVisible: true
+	userModalVisible: false
 };
 
 const homeSlice = createSlice({
