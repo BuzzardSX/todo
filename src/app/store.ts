@@ -16,6 +16,6 @@ type AppDispatch = typeof store.dispatch
 
 export const useAppSelector = useSelector.withTypes<RootState>();
 
-export const useAppDispatcher = useDispatch.withTypes<AppDispatch>();
+export const useAppDispatch = useDispatch.withTypes<AppDispatch>();
 
 export default store;
