@@ -1,9 +1,6 @@
 import { Form, Input } from 'antd-mobile';
-import { useInitialValues } from './hooks';
 
-const UserForm = () => {
-	const initialValues = useInitialValues();
-
+const UserForm = ({ initialValues }) => {
 	return (
 		<Form initialValues={initialValues} layout='horizontal'>
 			<Form.Item label='Age' name='age'>

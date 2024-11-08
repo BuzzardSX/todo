@@ -1,8 +1,13 @@
 import { UserForm } from '~/forms';
+import { useInitialValues } from './hooks';
 
 const UserPanel = () => {
+	const initialValues = useInitialValues();
+
 	return (
-		<UserForm />
+		<div>
+			<UserForm initialValues={initialValues} />
+		</div>
 	);
 };
 
