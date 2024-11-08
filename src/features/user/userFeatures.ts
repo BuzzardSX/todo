@@ -1,3 +1,3 @@
 import { lazy } from 'react';
 
-export const UserPanel = lazy(() => import('./panel'));
+export const UserAddButton = lazy(() => import('./addButton'));
