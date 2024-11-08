@@ -1,4 +1,4 @@
-import { useAppSelector } from '~/app/store';
+import { useAppDispatch, useAppSelector } from '~/app/store';
 import homeSlice from '../slice';
 
 export const useHomeUserAddModalVisibility = () => {
@@ -6,5 +6,11 @@ export const useHomeUserAddModalVisibility = () => {
 		homeSlice.selectors.selectUserModalVisible
 	);
 
-	return [visible];
+	const dispatch = useAppDispatch();
+
+	return [
+		visible,
+		() => dispatch(homeSlice.actions.userModalShow()),
+		() => dispatch(homeSlice.actions.userModalHide())
+	];
 };

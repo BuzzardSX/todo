@@ -1,26 +1,20 @@
-import { useAppDispatch } from '~/app/store';
 import { UserForm } from '~/forms';
 import { UserAddButton, UserAddModal } from '~/features/user';
 import { useHomeUserAddModalVisibility } from '~/features/home';
-import homeSlice from '~/features/home/slice';
 
 const initialValues = { age: 18 };
 
 const HomePage = () => {
-	const [userModalVisible] = useHomeUserAddModalVisibility();
-
-	const dispatch = useAppDispatch();
+	const [userModalVisible, userModalShow, userModalHide] = useHomeUserAddModalVisibility();
 
 	return (
 		<div>
-			<UserAddButton
-				onClick={() => dispatch(homeSlice.actions.userModalShow())}
-			/>
+			<UserAddButton onClick={userModalShow} />
 			<UserAddModal
 				content={(
 					<UserForm initialValues={initialValues} />
 				)}
-				onClose={() => dispatch(homeSlice.actions.userModalHide())}
+				onClose={userModalHide}
 				visible={userModalVisible}
 			/>
 		</div>
