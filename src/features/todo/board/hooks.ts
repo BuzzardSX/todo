@@ -1,4 +1,4 @@
-import { useAppSelector, useAppDispatcher } from '../../../app/store';
+import { useAppSelector, useAppDispatcher } from '~/app/store';
 import slice from './slice';
 
 export const useBoard = () => {
