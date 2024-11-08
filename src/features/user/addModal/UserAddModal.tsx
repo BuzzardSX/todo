@@ -5,13 +5,18 @@ const UserAddModal = ({ content, onClose, visible }) => {
 		<Modal
 			actions={[
 				{
+					key: 'save',
+					text: 'Save',
+					primary: true
+				},
+				{
 					key: 'cancel',
 					text: 'Cancel'
 				}
 			]}
 			closeOnMaskClick
 			content={content}
-			header='New user'
+			header='Add new user'
 			onClose={onClose}
 			showCloseButton
 			visible={visible}
