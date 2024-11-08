@@ -12,18 +12,14 @@ const HomePage = () => {
 
 	return (
 		<div>
-			<div>
-				<UserAddButton
-					onClick={() => dispatch(homeSlice.actions.userModalShow())}
-				/>
-			</div>
-			<div>
-				<UserAddModal
-					content={<UserForm initialValues={initialValues} />}
-					onClose={() => dispatch(homeSlice.actions.userModalHide())}
-					visible={userModalVisible}
-				/>
-			</div>
+			<UserAddButton
+				onClick={() => dispatch(homeSlice.actions.userModalShow())}
+			/>
+			<UserAddModal
+				content={<UserForm initialValues={initialValues} />}
+				onClose={() => dispatch(homeSlice.actions.userModalHide())}
+				visible={userModalVisible}
+			/>
 		</div>
 	);
 }
