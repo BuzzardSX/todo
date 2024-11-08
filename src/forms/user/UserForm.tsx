@@ -1,7 +1,7 @@
 import { Form, Input } from 'antd-mobile';
 
-const UserForm = ({ initialValues }) => (
-	<Form initialValues={initialValues} layout='horizontal'>
+const UserForm = ({ form, initialValues }) => (
+	<Form form={form} initialValues={initialValues} layout='horizontal'>
 		<Form.Item label='Age' name='age'>
 			<Input type='number' />
 		</Form.Item>

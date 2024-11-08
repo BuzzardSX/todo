@@ -1,3 +1,4 @@
+import { Form } from 'antd-mobile';
 import { UserForm } from '~/forms';
 import { UserAddButton, UserAddModal } from '~/features/user';
 import { useUserAddModalVisibility } from '~/features/home';
@@ -5,6 +6,8 @@ import { useUserAddModalVisibility } from '~/features/home';
 const initialValues = { age: 18 };
 
 const HomePage = () => {
+	const [userAddForm] = Form.useForm();
+
 	const [
 		userModalVisible,
 		userModalShow,
@@ -16,7 +19,10 @@ const HomePage = () => {
 			<UserAddButton onClick={userModalShow} />
 			<UserAddModal
 				content={(
-					<UserForm initialValues={initialValues} />
+					<UserForm
+						form={userAddForm}
+						initialValues={initialValues}
+					/>
 				)}
 				onClose={userModalHide}
 				visible={userModalVisible}
