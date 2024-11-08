@@ -14,4 +14,4 @@ const homeSlice = createSlice({
 	}
 });
 
-export default homeSlice;
+export const { actions } = homeSlice;
