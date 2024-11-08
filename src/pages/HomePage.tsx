@@ -8,16 +8,21 @@ const initialValues = { age: 18 };
 const HomePage = () => {
 	const userModalVisible = useAppSelector(homeSlice.selectors.selectUserModalVisible);
 
+	const dispatch = useAppDispatch();
+
 	return (
 		<div>
 			<div>
-				<UserAddButton />
+				<UserAddButton
+					onClick={() => dispatch(homeSlice.actions.userModalShow())}
+				/>
 			</div>
 			<div>
 				<UserAddModal
 					content={<UserForm initialValues={initialValues} />}
 					onClose={() => {}}
-					visible={userModalVisible} />
+					visible={userModalVisible}
+				/>
 			</div>
 		</div>
 	);
