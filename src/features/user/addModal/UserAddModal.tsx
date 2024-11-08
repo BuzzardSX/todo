@@ -7,6 +7,7 @@ const UserAddModal = ({ content, onClose, visible }) => {
 			content={content}
 			header='New user'
 			onClose={onClose}
+			showCloseButton
 			visible={visible}
 		/>
 	);
