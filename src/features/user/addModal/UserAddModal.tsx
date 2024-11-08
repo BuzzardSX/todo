@@ -17,6 +17,7 @@ const UserAddModal = ({ content, onClose, visible }) => {
 			closeOnMaskClick
 			content={content}
 			header='Add new user'
+			onAction={onClose}
 			onClose={onClose}
 			showCloseButton
 			visible={visible}
