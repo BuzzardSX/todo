@@ -1,5 +1,9 @@
+import { UserForm } from '~/forms';
+
 const UserPanel = () => {
-	return <div>Panel content</div>;
+	return (
+		<UserForm />
+	);
 };
 
 export default UserPanel;
