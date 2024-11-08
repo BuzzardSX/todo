@@ -1,8 +1,13 @@
-import { UserAddButton } from '~/features/user';
+import { UserAddButton, UserAddModal } from '~/features/user';
 
 const DefaultPage = () => (
 	<div>
-		<UserAddButton />
+		<div>
+			<UserAddButton />
+		</div>
+		<div>
+			<UserAddModal content={<div>Yes</div>} onClose={() => {}} visible={true} />
+		</div>
 	</div>
 );
 

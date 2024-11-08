@@ -5,6 +5,7 @@ const UserAddModal = ({ content, onClose, visible }) => {
 		<Modal
 			closeOnMaskClick
 			content={content}
+			header='New user'
 			onClose={onClose}
 			visible={visible} />
 	);
