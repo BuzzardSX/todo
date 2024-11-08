@@ -1,14 +1,13 @@
 import { useAppDispatch, useAppSelector } from '~/app/store';
 import { UserForm } from '~/forms';
 import { UserAddButton, UserAddModal } from '~/features/user';
+import { useHomeUserAddModalVisibility } from '~/features/home';
 import homeSlice from '~/features/home/slice';
 
 const initialValues = { age: 18 };
 
 const HomePage = () => {
-	const userModalVisible = useAppSelector(
-		homeSlice.selectors.selectUserModalVisible
-	);
+	const [userModalVisible] = useHomeUserAddModalVisibility();
 
 	const dispatch = useAppDispatch();
 
