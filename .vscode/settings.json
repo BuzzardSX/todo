@@ -3,5 +3,6 @@
 	"editor.tabSize": 4,
 	"files.exclude": {
 		"**/node_modules": true
-	}
+	},
+	"vite.autoStart": false
 }
