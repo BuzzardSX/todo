@@ -1,18 +1,22 @@
 import { UserForm } from '~/forms';
 import { UserAddButton, UserAddModal } from '~/features/user';
 
-const DefaultPage = () => (
-	<div>
+const initialValues = { age: 18 };
+
+const DefaultPage = () => {
+	return (
 		<div>
-			<UserAddButton />
+			<div>
+				<UserAddButton />
+			</div>
+			<div>
+				<UserAddModal
+					content={<UserForm initialValues={initialValues} />}
+					onClose={() => {}}
+					visible={true} />
+			</div>
 		</div>
-		<div>
-			<UserAddModal
-				content={<UserForm initialValues={{ age: 18 }} />}
-				onClose={() => {}}
-				visible={true} />
-		</div>
-	</div>
-);
+	);
+}
 
 export default DefaultPage;
