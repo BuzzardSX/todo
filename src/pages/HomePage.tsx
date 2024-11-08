@@ -6,7 +6,9 @@ import homeSlice from '~/features/home/slice';
 const initialValues = { age: 18 };
 
 const HomePage = () => {
-	const userModalVisible = useAppSelector(homeSlice.selectors.selectUserModalVisible);
+	const userModalVisible = useAppSelector(
+		homeSlice.selectors.selectUserModalVisible
+	);
 
 	const dispatch = useAppDispatch();
 
