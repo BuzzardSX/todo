@@ -5,7 +5,11 @@ import { useHomeUserAddModalVisibility } from '~/features/home';
 const initialValues = { age: 18 };
 
 const HomePage = () => {
-	const [userModalVisible, userModalShow, userModalHide] = useHomeUserAddModalVisibility();
+	const [
+		userModalVisible,
+		userModalShow,
+		userModalHide
+	] = useHomeUserAddModalVisibility();
 
 	return (
 		<div>
