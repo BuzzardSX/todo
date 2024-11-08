@@ -7,7 +7,7 @@ const UserForm = () => {
 	return (
 		<Form initialValues={initialValues} layout='horizontal'>
 			<Form.Item label='Age' name='age'>
-				<Input />
+				<Input type='number' />
 			</Form.Item>
 		</Form>
 	);
