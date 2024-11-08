@@ -1,12 +1,12 @@
 import { Provider } from 'react-redux';
 import store from './store';
 import { ConfigProvider } from 'antd-mobile';
-import { DefaultPage } from '~/pages';
+import { HomePage } from '~/pages';
 
 const App = () => (
 	<Provider store={store}>
 		<ConfigProvider>
-			<DefaultPage />
+			<HomePage />
 		</ConfigProvider>
 	</Provider>
 );

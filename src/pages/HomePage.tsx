@@ -3,7 +3,7 @@ import { UserAddButton, UserAddModal } from '~/features/user';
 
 const initialValues = { age: 18 };
 
-const DefaultPage = () => {
+const HomePage = () => {
 	return (
 		<div>
 			<div>
@@ -19,4 +19,4 @@ const DefaultPage = () => {
 	);
 }
 
-export default DefaultPage;
+export default HomePage;
