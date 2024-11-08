@@ -1,14 +1,10 @@
 import { Provider } from 'react-redux';
-import { UserForm } from '~/forms';
-import { Board } from '~/features/todo';
 import store from './store';
+import { DefaultPage } from '~/pages';
 
 const App = () => (
 	<Provider store={store}>
-		<div>
-			<UserForm />
-		</div>
-		<Board />
+		<DefaultPage />
 	</Provider>
 );
 
