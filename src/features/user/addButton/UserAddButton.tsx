@@ -1,9 +1,9 @@
 import { Button } from 'antd-mobile';
 import { UserForm } from '~/forms';
-import { useInitialValues } from './hooks';
+import { useFormInitialValues } from './hooks';
 
 const UserAddButton = () => {
-	const initialValues = useInitialValues();
+	const formInitialValues = useFormInitialValues();
 
 	return (
 		<div>
@@ -11,7 +11,7 @@ const UserAddButton = () => {
 				<Button>Add user</Button>
 			</div>
 			<div>
-				<UserForm initialValues={initialValues} />
+				<UserForm initialValues={formInitialValues} />
 			</div>
 		</div>
 	);
