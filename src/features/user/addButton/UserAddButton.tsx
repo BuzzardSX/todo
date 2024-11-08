@@ -8,7 +8,7 @@ const UserAddButton = () => {
 	return (
 		<div>
 			<div>
-				<Button>Add user</Button>
+				<Button color='primary'>Add user</Button>
 			</div>
 			<div>
 				<UserForm initialValues={formInitialValues} />
