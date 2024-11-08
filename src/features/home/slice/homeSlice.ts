@@ -1,10 +1,12 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-	userModalVisible: false
+	userModalVisible: true
 };
 
 export const {
+	reducerPath,
+	reducer,
 	actions,
 	selectors
 } = createSlice({
