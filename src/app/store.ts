@@ -1,12 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { useSelector, useDispatch } from 'react-redux';
 import todoBoardSlice from '~/features/todo/board/slice';
-import { reducerPath, reducer } from '~/features/home/slice';
+import homeSlice from '~/features/home/slice';
 
 const store = configureStore({
 	reducer: {
-		[todoBoardSlice.reducerPath]: todoBoardSlice.reducer,
-		[reducerPath]: reducer
+		[homeSlice.reducerPath]: homeSlice.reducer,
+		[todoBoardSlice.reducerPath]: todoBoardSlice.reducer
 	}
 });
 

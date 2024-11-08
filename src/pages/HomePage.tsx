@@ -1,12 +1,12 @@
 import { useAppSelector } from '~/app/store';
 import { UserForm } from '~/forms';
 import { UserAddButton, UserAddModal } from '~/features/user';
-import { selectors } from '~/features/home/slice';
+import homeSlice from '~/features/home/slice';
 
 const initialValues = { age: 18 };
 
 const HomePage = () => {
-	const userModalVisible = useAppSelector(selectors.selectUserModalVisible);
+	const userModalVisible = useAppSelector(homeSlice.selectors.selectUserModalVisible);
 
 	return (
 		<div>

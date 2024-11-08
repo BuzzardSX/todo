@@ -4,12 +4,7 @@ const initialState = {
 	userModalVisible: true
 };
 
-export const {
-	reducerPath,
-	reducer,
-	actions,
-	selectors
-} = createSlice({
+const homeSlice = createSlice({
 	name: 'home',
 	initialState,
 	reducers: {
@@ -21,3 +16,5 @@ export const {
 		selectUserModalVisible: (state) => state.userModalVisible
 	}
 });
+
+export default homeSlice;

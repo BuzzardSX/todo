@@ -1,1 +1,1 @@
-export * from './homeSlice';
+export { default } from './homeSlice';
