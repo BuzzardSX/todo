@@ -5,8 +5,8 @@ const UserForm = () => {
 	const initialValues = useInitialValues();
 
 	return (
-		<Form initialValues={initialValues}>
-			<Form.Item name='age'>
+		<Form initialValues={initialValues} layout='horizontal'>
+			<Form.Item label='Age' name='age'>
 				<Input />
 			</Form.Item>
 		</Form>
