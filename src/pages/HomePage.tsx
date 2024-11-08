@@ -20,7 +20,7 @@ const HomePage = () => {
 			<div>
 				<UserAddModal
 					content={<UserForm initialValues={initialValues} />}
-					onClose={() => {}}
+					onClose={() => dispatch(homeSlice.actions.userModalHide())}
 					visible={userModalVisible}
 				/>
 			</div>
