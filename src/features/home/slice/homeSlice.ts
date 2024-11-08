@@ -10,6 +10,9 @@ const homeSlice = createSlice({
 	reducers: {
 		userModalShow: (state) => {
 			state.userModalVisible = true;
+		},
+		userModalHide: (state) => {
+			state.userModalVisible = false;
 		}
 	},
 	selectors: {
