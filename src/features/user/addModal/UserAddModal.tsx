@@ -1,6 +1,6 @@
 import { Modal } from 'antd-mobile';
 
-const UserAddModal = ({ content, onClose, visible }) => (
+const UserAddModal = ({ content, onClose, onSave, visible }) => (
 	<Modal
 		actions={[
 			{
@@ -16,7 +16,13 @@ const UserAddModal = ({ content, onClose, visible }) => (
 		closeOnMaskClick
 		content={content}
 		header='Add user'
-		onAction={onClose}
+		onAction={({ key }) => {
+			switch (key) {
+				case 'save': onSave();
+			}
+
+			onClose();
+		}}
 		onClose={onClose}
 		showCloseButton
 		visible={visible}

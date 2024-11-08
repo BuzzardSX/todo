@@ -25,6 +25,7 @@ const HomePage = () => {
 					/>
 				)}
 				onClose={userModalHide}
+				onSave={() => userAddForm.submit()}
 				visible={userModalVisible}
 			/>
 		</div>
