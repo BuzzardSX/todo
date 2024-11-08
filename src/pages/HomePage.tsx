@@ -1,6 +1,6 @@
 import { UserForm } from '~/forms';
 import { UserAddButton, UserAddModal } from '~/features/user';
-import { useHomeUserAddModalVisibility } from '~/features/home';
+import { useUserAddModalVisibility } from '~/features/home';
 
 const initialValues = { age: 18 };
 
@@ -9,7 +9,7 @@ const HomePage = () => {
 		userModalVisible,
 		userModalShow,
 		userModalHide
-	] = useHomeUserAddModalVisibility();
+	] = useUserAddModalVisibility();
 
 	return (
 		<div>

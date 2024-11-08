@@ -1,1 +1,1 @@
-export { useHomeUserAddModalVisibility } from './hooks';
+export { useUserAddModalVisibility } from './hooks';
