@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import { Form } from 'antd-mobile';
 import { UserForm } from '~/forms';
 import { UserAddButton, UserAddModal } from '~/features/user';
@@ -19,10 +20,12 @@ const HomePage = () => {
 			<UserAddButton onClick={userModalShow} />
 			<UserAddModal
 				content={(
-					<UserForm
-						form={userAddForm}
-						initialValues={initialValues}
-					/>
+					<Suspense fallback='Loading...'>
+						<UserForm
+							form={userAddForm}
+							initialValues={initialValues}
+						/>
+					</Suspense>
 				)}
 				onClose={userModalHide}
 				onSave={() => userAddForm.submit()}
