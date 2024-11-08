@@ -6,7 +6,7 @@ import {
 } from './hooks';
 
 const UserAddButton = () => {
-	const [modalVisible, modalShow] = useModalVisibility();
+	const [modalVisible, modalShow, modalClose] = useModalVisibility();
 
 	const formInitialValues = useFormInitialValues();
 
@@ -17,9 +17,11 @@ const UserAddButton = () => {
 			</div>
 			<div>
 				<Modal
+					closeOnMaskClick
 					content={(
 						<UserForm initialValues={formInitialValues} />
 					)}
+					onClose={modalClose}
 					visible={modalVisible} />
 			</div>
 		</div>
