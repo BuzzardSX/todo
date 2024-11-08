@@ -1,3 +1,1 @@
-import { lazy } from 'react';
-
-export const UserAddButton = lazy(() => import('./addButton'));
+export { default as UerAddButton } from './addButton';

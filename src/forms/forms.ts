@@ -1,3 +1,1 @@
-import { lazy } from 'react';
-
-export const UserForm = lazy(() => import('./user'));
+export { default as UserForm } from './user';
