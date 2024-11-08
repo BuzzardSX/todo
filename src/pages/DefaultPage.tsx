@@ -1,8 +1,8 @@
-import { UserForm } from '~/forms';
+import { UserAddButton } from '~/features/user';
 
 const DefaultPage = () => (
 	<div>
-		<UserForm />
+		<UserAddButton />
 	</div>
 );
 
