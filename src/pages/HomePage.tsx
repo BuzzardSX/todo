@@ -16,7 +16,9 @@ const HomePage = () => {
 				onClick={() => dispatch(homeSlice.actions.userModalShow())}
 			/>
 			<UserAddModal
-				content={<UserForm initialValues={initialValues} />}
+				content={(
+					<UserForm initialValues={initialValues} />
+				)}
 				onClose={() => dispatch(homeSlice.actions.userModalHide())}
 				visible={userModalVisible}
 			/>
