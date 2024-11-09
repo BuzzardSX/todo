@@ -1,12 +1,12 @@
 import { Suspense } from 'react';
-import { Form, Skeleton } from 'antd-mobile';
+import { Form } from 'antd-mobile';
 import { LoadingUserForm, UserForm } from '~/forms';
 import { UserAddButton, UserAddModal } from '~/features/user';
 import { useUserAddModalVisibility } from '~/features/home';
 
 const initialValues = { age: 18 };
 
-const HomePage = () => {
+const HomePage = () => { 
 	const [userAddForm] = Form.useForm();
 
 	const [
