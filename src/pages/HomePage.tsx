@@ -4,8 +4,6 @@ import { LoadingUserForm, UserForm } from '~/forms';
 import { UserAddButton, UserAddModal } from '~/features/user';
 import { useUserAddModalVisibility } from '~/features/home';
 
-const initialValues = { name: 'Mike', age: 18 };
-
 const HomePage = () => { 
 	const [userAddForm] = Form.useForm();
 
@@ -21,10 +19,7 @@ const HomePage = () => {
 			<UserAddModal
 				content={(
 					<Suspense fallback={<LoadingUserForm />}>
-						<UserForm
-							form={userAddForm}
-							initialValues={initialValues}
-						/>
+						<UserForm form={userAddForm} />
 					</Suspense>
 				)}
 				onClose={userModalHide}
