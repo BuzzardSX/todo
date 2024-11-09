@@ -1,6 +1,6 @@
 import { Suspense } from 'react';
 import { Form, Skeleton } from 'antd-mobile';
-import { UserForm } from '~/forms';
+import { LoadingUserForm, UserForm } from '~/forms';
 import { UserAddButton, UserAddModal } from '~/features/user';
 import { useUserAddModalVisibility } from '~/features/home';
 
@@ -20,14 +20,7 @@ const HomePage = () => {
 			<UserAddButton onClick={userModalShow} />
 			<UserAddModal
 				content={(
-					<Suspense
-						fallback={(
-							<div>
-								<Skeleton.Title />
-								<Skeleton.Paragraph />
-							</div>
-						)}
-					>
+					<Suspense fallback={<LoadingUserForm />}>
 						<UserForm
 							form={userAddForm}
 							initialValues={initialValues}
