@@ -1,5 +1,5 @@
 import { useAppSelector, useAppDispatch } from '~/app/store';
-import slice from './slice';
+import slice from '../slice';
 
 export const useBoard = () => {
 	const { lists } = useAppSelector(slice.selectSlice);
