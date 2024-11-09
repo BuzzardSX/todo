@@ -5,7 +5,6 @@ const UserForm = ({ form, initialValues }) => (
 		form={form}
 		initialValues={initialValues}
 		layout='horizontal'
-		onFinish={(values) => console.log(values)}
 	>
 		<Form.Item label='Name' name='name' required>
 			<Input />
