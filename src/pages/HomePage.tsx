@@ -4,7 +4,7 @@ import { LoadingUserForm, UserForm } from '~/forms';
 import { UserAddButton, UserAddModal } from '~/features/user';
 import { useUserAddModalVisibility } from '~/features/home';
 
-const initialValues = { age: 18 };
+const initialValues = { name: 'Mike', age: 18 };
 
 const HomePage = () => { 
 	const [userAddForm] = Form.useForm();
