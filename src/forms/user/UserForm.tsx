@@ -1,5 +1,5 @@
 import { Form, Input } from 'antd-mobile';
-import { useFormReinitialization } from '~/lib/_adm';
+import { useFormReinitialization } from '~/mods/antdMobile';
 import { useInitialValues } from './hooks';
 import { UserFormProps } from '../forms';
 
