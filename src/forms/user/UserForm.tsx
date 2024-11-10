@@ -4,14 +4,14 @@ import { useInitialValues } from './hooks';
 import { UserFormProps } from '../forms';
 
 const UserForm = ({ form }: UserFormProps) => {
-	const [initialValues] = useInitialValues();
+	const { values } = useInitialValues();
 
-	useFormReinitialization(form, initialValues);
+	useFormReinitialization(form, values);
 
 	return (
 		<Form
 			form={form}
-			initialValues={initialValues}
+			initialValues={values}
 			layout='horizontal'
 		>
 			<Form.Item label='Name' name='name' required>
