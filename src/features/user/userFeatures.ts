@@ -6,6 +6,8 @@ export interface UserAddButonProps {
 
 export interface UserAddModalProps {
 	content: ReactNode;
+	onClose: () => {};
+	onSave: () => {};
 	visible: boolean;
 }
 
