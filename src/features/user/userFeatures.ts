@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react';
+import { lazy, type ReactNode } from 'react';
 
 export interface UserAddButonProps {
 	onClick: () => void;
@@ -11,5 +11,6 @@ export interface UserAddModalProps {
 	visible: boolean;
 }
 
-export { default as UserAddButton } from './addButton';
+export const UserAddButton = lazy(() => import('./addButton'));
+
 export { default as UserAddModal } from './addModal';
