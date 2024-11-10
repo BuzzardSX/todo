@@ -1,7 +1,8 @@
 import { Form, Input } from 'antd-mobile';
 import { useInitialValues } from './hooks';
+import { UserFormProps } from '../forms';
 
-const UserForm = ({ form }) => {
+const UserForm = ({ form }: UserFormProps) => {
 	const [initialValues] = useInitialValues();
 
 	return (
