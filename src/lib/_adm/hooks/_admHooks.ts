@@ -6,7 +6,7 @@ type FormInstance<Values> = ReturnType<typeof Form.useForm<Values>>[0]
 export const useFormReinitialization = <Values>(form: FormInstance<Values>) => {
 	useEffect(
 		() => {
-			console.warn('Affected.');
+			console.log('Affected.');
 
 			console.log(form.getFieldsValue());
 		},
