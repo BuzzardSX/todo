@@ -7,9 +7,7 @@ export const useFormReinitialization =
 	<Values>(form: FormInstance<Values>, initialValues: Values) => {
 		useEffect(
 			() => {
-				console.log('Affected.');
-
-				console.log(form.getFieldsValue());
+				console.log('Affected');
 			},
 			[initialValues]
 		);
