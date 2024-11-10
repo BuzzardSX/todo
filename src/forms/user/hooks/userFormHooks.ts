@@ -11,10 +11,10 @@ type IncrementAge = { type: 'incrementAge' };
 
 type Action = IncrementAge;
 
-type InitialValues = [Values];
+type InitialValues = [Values, () => void];
 
 export const useInitialValues: () => InitialValues = () => {
-	const [state] = useReducer(
+	const [state, dispatch] = useReducer(
 		(state: State, action: Action) => {
 			switch (action.type) {
 				case 'incrementAge':
@@ -32,5 +32,8 @@ export const useInitialValues: () => InitialValues = () => {
 		}
 	);
 
-	return [state];
+	return [
+		state,
+		() => dispatch({ type: 'incrementAge' })
+	];
 };
