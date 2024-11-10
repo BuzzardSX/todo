@@ -1,13 +1,13 @@
 import type { ReactNode } from 'react';
 
 export interface UserAddButonProps {
-	onClick: () => {};
+	onClick: () => void;
 }
 
 export interface UserAddModalProps {
 	content: ReactNode;
-	onClose: () => {};
-	onSave: () => {};
+	onClose: () => void;
+	onSave: () => void;
 	visible: boolean;
 }
 
