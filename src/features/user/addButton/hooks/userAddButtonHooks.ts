@@ -1,4 +1,4 @@
-import { useMemo, useReducer } from 'react';
+import { useReducer } from 'react';
 
 type State = boolean;
 
@@ -31,8 +31,3 @@ export const useModalVisibility: () => ModalVisibility = () => {
 		() => dispatch({ type: 'HIDE' })
 	];
 };
-
-export const useFormInitialValues = () => useMemo(
-	() => ({ age: 18 }),
-	[]
-);
