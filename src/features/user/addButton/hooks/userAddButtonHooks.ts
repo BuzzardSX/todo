@@ -12,20 +12,19 @@ type ModalVisibility = [boolean, () => void, () => void];
 
 const initialState: State = false;
 
+const reducer = (state: State, action: Action): State => {
+	switch (action.type) {
+		case 'show':
+			return true;
+		case 'hide':
+			return false;
+		default:
+			return state;
+	}
+}
+
 export const useModalVisibility: () => ModalVisibility = () => {
-	const [state, dispatch] = useReducer(
-		(state: State, action: Action): State => {
-			switch (action.type) {
-				case 'show':
-					return true;
-				case 'hide':
-					return false;
-				default:
-					return state;
-			}
-		},
-		initialState
-	);
+	const [state, dispatch] = useReducer(reducer, initialState);
 
 	return [
 		state,
