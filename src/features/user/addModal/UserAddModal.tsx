@@ -1,7 +1,12 @@
 import { Modal } from 'antd-mobile';
 import type { UserAddModalProps } from '../userFeatures';
 
-const UserAddModal = ({ content, onClose, onSave, visible }: UserAddModalProps) => (
+const UserAddModal = ({
+	content,
+	onClose,
+	onSave,
+	visible
+}: UserAddModalProps) => (
 	<Modal
 		actions={[
 			{
