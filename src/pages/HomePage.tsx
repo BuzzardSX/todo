@@ -1,11 +1,15 @@
 import { Suspense } from 'react';
 import { Form } from 'antd-mobile';
-import { LoadingUserForm, UserForm } from '~/forms';
+import {
+	LoadingUserForm,
+	UserForm,
+	type UserFormValues
+} from '~/forms';
 import { UserAddButton, UserAddModal } from '~/features/user';
 import { useUserAddModalVisibility } from '~/features/home';
 
 const HomePage = () => { 
-	const [userAddForm] = Form.useForm();
+	const [userAddForm] = Form.useForm<UserFormValues>();
 
 	const [
 		userModalVisible,

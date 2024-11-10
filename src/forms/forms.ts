@@ -1,7 +1,7 @@
 import { lazy } from 'react';
 import { Form } from 'antd-mobile';
 
-interface UserFormValues {
+export interface UserFormValues {
 	name: string;
 	age: number;
 }
