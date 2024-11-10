@@ -2,9 +2,9 @@ import { useReducer } from 'react';
 
 type State = boolean;
 
-type Show = { type: 'SHOW' };
+type Show = { type: 'show' };
 
-type Hide = { type: 'HIDE' };
+type Hide = { type: 'hide' };
 
 type Action = Show | Hide;
 
@@ -16,9 +16,9 @@ export const useModalVisibility: () => ModalVisibility = () => {
 	const [state, dispatch] = useReducer(
 		(state: State, action: Action): State => {
 			switch (action.type) {
-				case 'SHOW':
+				case 'show':
 					return true;
-				case 'HIDE':
+				case 'hide':
 					return false;
 				default:
 					return state;
@@ -29,7 +29,7 @@ export const useModalVisibility: () => ModalVisibility = () => {
 
 	return [
 		state,
-		() => dispatch({ type: 'SHOW' }),
-		() => dispatch({ type: 'HIDE' })
+		() => dispatch({ type: 'show' }),
+		() => dispatch({ type: 'hide' })
 	];
 };
