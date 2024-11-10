@@ -6,7 +6,7 @@ import { UserFormProps } from '../forms';
 const UserForm = ({ form }: UserFormProps) => {
 	const [initialValues] = useInitialValues();
 
-	useFormReinitialization();
+	useFormReinitialization(form);
 
 	return (
 		<Form

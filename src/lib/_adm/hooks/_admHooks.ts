@@ -1,12 +1,14 @@
 import { useEffect } from 'react';
 import { Form } from 'antd-mobile';
 
-type FormInstance<T> = ReturnType<typeof Form.useForm<T>>[0]
+type FormInstance<Values> = ReturnType<typeof Form.useForm<Values>>[0]
 
-export const useFormReinitialization = () => {
+export const useFormReinitialization = <Values = any>(form: FormInstance<Values>) => {
 	useEffect(
 		() => {
-			console.log('Affected.')
+			console.warn('Affected.');
+
+			console.log(form.getFieldsValue());
 		},
 		[]
 	);
