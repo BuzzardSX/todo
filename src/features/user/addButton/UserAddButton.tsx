@@ -1,5 +1,5 @@
 import { Button } from 'antd-mobile';
-import type { UserAddButonProps } from './userAddButtonFeature';
+import type { UserAddButonProps } from '../userFeatures';
 
 const UserAddButton = ({ onClick }: UserAddButonProps) => (
 	<Button color='primary' onClick={onClick}>
