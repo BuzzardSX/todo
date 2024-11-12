@@ -5,7 +5,7 @@ import {
 	UserForm,
 	type UserFormValues
 } from '~/forms';
-import UserAddModal from '~/modals/user/UserAddModal';
+import UserAddModal from '~/modals/user/add';
 import { UserAddButton } from '~/features/user';
 import { useUserAddModalVisibility } from '~/features/home';
 
