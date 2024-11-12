@@ -5,7 +5,8 @@ import {
 	UserForm,
 	type UserFormValues
 } from '~/forms';
-import { UserAddButton, UserAddModal } from '~/features/user';
+import UserAddModal from '~/modals/user/UserAddModal';
+import { UserAddButton } from '~/features/user';
 import { useUserAddModalVisibility } from '~/features/home';
 
 const HomePage = () => { 

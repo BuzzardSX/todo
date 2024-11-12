@@ -1,5 +1,5 @@
 import { Modal } from 'antd-mobile';
-import type { UserAddModalProps } from '../userFeatures';
+import type { UserAddModalProps } from '~/features/user';
 
 const UserAddModal = ({
 	content,

@@ -12,5 +12,3 @@ export interface UserAddModalProps {
 }
 
 export const UserAddButton = lazy(() => import('./addButton'));
-
-export { default as UserAddModal } from './addModal';
