@@ -16,6 +16,11 @@ interface InitialValues {
 	values: Values;
 }
 
+const initialValues: State = {
+	name: 'Mike',
+	age: 18
+};
+
 const useInitialValues: () => InitialValues = () => {
 	const [state, dispatch] = useReducer(
 		(state: State, action: Action) => {
@@ -29,10 +34,7 @@ const useInitialValues: () => InitialValues = () => {
 					return state;
 			}
 		},
-		{
-			name: 'Mike',
-			age: 18
-		}
+		initialValues
 	);
 
 	return {
