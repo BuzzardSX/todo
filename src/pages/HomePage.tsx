@@ -9,7 +9,7 @@ import { UserAddModal } from '~/modals/user';
 import { UserAddButton } from '~/features/user';
 import { useUserAddModalVisibility } from '~/features/home';
 
-const HomePage = () => { 
+const HomePage = () => {
 	const [userAddForm] = Form.useForm<UserFormValues>();
 
 	const [
