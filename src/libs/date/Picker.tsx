@@ -9,7 +9,7 @@ const Picker = ({ value }: PickerProps) => {
 			<div className='date-picker-week'>
 				{week.map(
 					(day) => (
-						<div className='date-picker-day'>
+						<div className='date-picker-day' key={day}>
 							{day}
 						</div>
 					)
