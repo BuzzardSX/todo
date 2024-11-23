@@ -1,5 +1,3 @@
-import './date.css';
-
 interface PickerProps {
 	value: number;
 }
