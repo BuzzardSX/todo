@@ -1,8 +1,5 @@
-interface DatePickerProps {
-	value: number;
-}
-
-const DatePicker = ({ value }: DatePickerProps) => {
+const DatePicker = () => {
+	return <div>Content</div>;
 };
 
 export default DatePicker;
