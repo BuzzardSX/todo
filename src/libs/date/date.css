@@ -1,3 +1,7 @@
+.date-picker {
+	display: table;
+}
+
 .date-picker-week {
 	display: table-row;
 }

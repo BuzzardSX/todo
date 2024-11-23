@@ -5,14 +5,16 @@ const Picker = ({ value }: PickerProps) => {
 	const week = useWeek(value);
 
 	return (
-		<div className='date-picker-week'>
-			{week.map(
-				(day) => (
-					<div className='date-picker-day'>
-						{day}
-					</div>
-				)
-			)}
+		<div className='date-picker'>
+			<div className='date-picker-week'>
+				{week.map(
+					(day) => (
+						<div className='date-picker-day'>
+							{day}
+						</div>
+					)
+				)}
+			</div>
 		</div>
 	);
 };
