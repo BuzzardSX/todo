@@ -1,11 +1,9 @@
-import { Picker } from '~/libs/date';
-
-const value = new Date(new Date().setDate(3)).getTime();
+import { PickerStory } from '~/stories';
 
 const AboutPage = () => (
 	<div>
 		<div>
-			<Picker value={value} />
+			<PickerStory />
 		</div>
 		<div>About us</div>
 	</div>
