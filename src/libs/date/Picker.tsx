@@ -1,15 +1,16 @@
 import { useWeek } from './hooks';
 import type { PickerProps } from './date';
+import style from './Picker.module.css';
 
 const Picker = ({ value }: PickerProps) => {
 	const week = useWeek(value);
 
 	return (
-		<div className='date-picker'>
-			<div className='date-picker-week'>
+		<div className={style.picker}>
+			<div className={style.week}>
 				{week.map(
 					(day) => (
-						<div className='date-picker-day' key={day}>
+						<div className={style.day} key={day}>
 							{day}
 						</div>
 					)

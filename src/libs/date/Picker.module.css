@@ -1,11 +1,11 @@
-.date-picker {
+.picker {
 	display: table;
 }
 
-.date-picker-week {
+.week {
 	display: table-row;
 }
 
-.date-picker-day {
+.day {
 	display: table-cell;
 }
