@@ -1,6 +1,14 @@
+import { Picker } from '~/libs/date';
+
+const pickerValue = Date.now();
+
 const PickerStory = () => {
 	return (
-		<div>Content</div>
+		<div>
+			<div>
+				<Picker value={pickerValue} />
+			</div>
+		</div>
 	);
 };
 
