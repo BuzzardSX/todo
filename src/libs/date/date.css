@@ -1,3 +1,7 @@
-.lib-date-picker-week {
+.date-picker-week {
 	display: table-row;
+}
+
+.date-picker-day {
+	display: table-cell;
 }
