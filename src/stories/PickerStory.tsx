@@ -1,12 +1,13 @@
 import { Picker } from '~/libs/date';
-
-const pickerValue = Date.now();
+import { useValue } from './hooks';
 
 const PickerStory = () => {
+	const value = useValue();
+
 	return (
 		<div>
 			<div>
-				<Picker value={pickerValue} />
+				<Picker value={value} />
 			</div>
 		</div>
 	);
