@@ -1,7 +1,8 @@
 import { ModalProps } from './reactComponents';
+import style from './Modal.module.css';
 
 const Modal = ({ children }: ModalProps) => (
-	<div>{children}</div>
+	<div className={style.modal}>{children}</div>
 );
 
 export default Modal;
