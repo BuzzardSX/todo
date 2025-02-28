@@ -1,4 +1,5 @@
 import { Picker } from '~/libs/date';
+import { Modal } from '~/libs/react/components';
 import { useValue } from './hooks';
 
 const PickerStory = () => {
@@ -8,6 +9,11 @@ const PickerStory = () => {
 		<div>
 			<div>
 				<Picker value={value} />
+			</div>
+			<div>
+				<Modal>
+					Modal content
+				</Modal>
 			</div>
 		</div>
 	);
