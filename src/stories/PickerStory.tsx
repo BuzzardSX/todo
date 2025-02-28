@@ -11,7 +11,7 @@ const PickerStory = () => {
 				<Picker value={value} />
 			</div>
 			<div>
-				<Modal>
+				<Modal open={true}>
 					Modal content
 				</Modal>
 			</div>
