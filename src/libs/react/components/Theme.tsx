@@ -1,4 +1,4 @@
-import type { HTMLAttributes, ReactNode } from 'react';
+import type { CSSProperties, ReactNode } from 'react';
 import style from './Theme.module.css';
 
 const Theme = ({ children, ...props }: ThemeProps) => (
@@ -7,7 +7,7 @@ const Theme = ({ children, ...props }: ThemeProps) => (
 
 export interface ThemeProps {
 	children: ReactNode;
-	style?: HTMLAttributes<HTMLDivElement>;
+	style?: CSSProperties;
 }
 
 export default Theme;

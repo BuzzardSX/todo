@@ -5,7 +5,7 @@ import { AboutPage } from '~/pages';
 
 const App = () => (
 	<Provider store={store}>
-		<Theme>
+		<Theme style={{ height: '100%', left: 0, position: 'absolute', top: 0, width: '100%' }}>
 			<AboutPage />
 		</Theme>
 	</Provider>
