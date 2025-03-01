@@ -5,7 +5,10 @@ const Button = ({
 	children,
 	type = 'default'
 }: ButtonProps) => {
-	const className = [style.button, style.primary].join(' ');
+	const className = [
+		style.button,
+		type == 'primary' && style.primary
+	].join(' ');
 
 	return (
 		<button className={className}>
