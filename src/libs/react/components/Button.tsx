@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import style from './bButton.module.css';
+import style from './button.module.css';
 
 const Button = ({
 	children,
