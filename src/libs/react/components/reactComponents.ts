@@ -3,7 +3,7 @@ import type { ReactNode } from 'react';
 export { default as Button } from './Button';
 export { default as Modal } from './Modal';
 
-type ButtonType = 'default' | 'primary';
+export type ButtonType = 'default' | 'primary';
 
 export interface ButtonProps {
 	children: ReactNode;
