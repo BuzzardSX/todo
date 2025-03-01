@@ -1,4 +1,4 @@
-import style from './Modal.module.css';
+import style from './mModal.module.css';
 import type { ModalProps } from './reactComponents';
 
 const Modal = ({ children, open }: ModalProps) => {
