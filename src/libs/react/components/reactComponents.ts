@@ -7,7 +7,7 @@ export type ButtonType = 'default' | 'primary';
 
 export interface ButtonProps {
 	children: ReactNode;
-	type: ButtonType;
+	type?: ButtonType;
 }
 
 export interface ModalProps {
