@@ -1,5 +1,9 @@
 .button {
-	--primary-color: #005bff;
+	--primary-color: #0d6efd;
 
 	background-color: var(--primary-color);
+}
+
+.primary {
+	--primary-color: #0d6efd;
 }
