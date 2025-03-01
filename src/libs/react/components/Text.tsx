@@ -1,7 +1,8 @@
 import type { ReactNode } from 'react';
+import style from './text.module.css';
 
 const Text = ({ children }: TextProps) => (
-	<div>{children}</div>
+	<div className={style.root}>{children}</div>
 );
 
 export interface TextProps {

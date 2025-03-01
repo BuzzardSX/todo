@@ -1,4 +1,5 @@
 .theme {
+	--color: #fff;
 	--font-family: system-ui;
 	--primary-color: #0d6efd;
 	background-color: rgb(20, 20, 20);
