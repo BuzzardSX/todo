@@ -1,4 +1,8 @@
-export { Button, Modal } from './reactComponents';
+export {
+	Button,
+	Modal,
+	Text
+} from './reactComponents';
 
 export type {
 	ButtonProps,
