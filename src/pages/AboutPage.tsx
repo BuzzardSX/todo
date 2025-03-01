@@ -1,4 +1,4 @@
-import { Button } from '~/libs/react/components';
+import { Button, Text } from '~/libs/react/components';
 
 const AboutPage = () => (
 	<div>
@@ -8,7 +8,7 @@ const AboutPage = () => (
 		<div>
 			<Button type='primary'>Primary</Button>
 		</div>
-		<div>About us</div>
+		<Text>About us</Text>
 	</div>
 );
 
