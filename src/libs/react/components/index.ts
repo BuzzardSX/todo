@@ -1,7 +1,8 @@
 export {
 	Button,
 	Modal,
-	Text
+	Text,
+	Theme
 } from './reactComponents';
 
 export type {

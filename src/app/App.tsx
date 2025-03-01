@@ -1,10 +1,13 @@
 import { Provider } from 'react-redux';
 import store from './store';
+import { Theme } from '~/libs/react/components';
 import { AboutPage } from '~/pages';
 
 const App = () => (
 	<Provider store={store}>
-		<AboutPage />
+		<Theme>
+			<AboutPage />
+		</Theme>
 	</Provider>
 );
 
