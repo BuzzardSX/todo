@@ -1,4 +1,4 @@
-import type { ButtonProps } from './reactComponents';
+import type { ReactNode } from 'react';
 import style from './Button.module.css';
 
 const Button = ({
@@ -16,5 +16,12 @@ const Button = ({
 		</button>
 	);
 };
+
+export type ButtonType = 'default' | 'primary';
+
+export interface ButtonProps {
+	children: ReactNode;
+	type?: ButtonType;
+}
 
 export default Button;
