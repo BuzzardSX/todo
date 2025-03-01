@@ -1,7 +1,8 @@
 import type { ReactNode } from 'react';
+import style from './Theme.module.css';
 
 const Theme = ({ children }: ThemeProps) => (
-	<div>{children}</div>
+	<div className={style.theme}>{children}</div>
 )
 
 export interface ThemeProps {

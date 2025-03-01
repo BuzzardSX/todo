@@ -1,8 +1,3 @@
-:root {
-	--font-family: system-ui;
-	--primary-color: #0d6efd;
-}
-
 .button {
 	--color: #fff;
 	background-color: var(--color);
