@@ -6,7 +6,7 @@ const Button = ({
 	type = 'default'
 }: ButtonProps) => {
 	const className = [
-		style.button,
+		style.root,
 		type == 'primary' && style.primary
 	].join(' ');
 
