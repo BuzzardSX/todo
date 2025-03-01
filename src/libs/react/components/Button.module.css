@@ -4,7 +4,7 @@
 	background-color: var(--color);
 	border: 1px solid var(--color);
 	border-radius: 6px;
-	color: var(--content-color);
+	color: light-dark(var(--content-color), var(--content-color));
 	font-family: var(--font-family);
 	font-size: 14px;
 }
