@@ -1,9 +1,11 @@
-.button {
+:root {
 	--primary-color: #0d6efd;
+}
 
-	background-color: var(--primary-color);
+.button {
+	background-color: white;
 }
 
 .primary {
-	--primary-color: #0d6efd;
+	background-color: var(--primary-color);
 }
