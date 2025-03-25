@@ -1,11 +1,9 @@
-import { Button, Text } from '~/libs/react/components';
+import { Button, EditableText, Text } from '~/libs/react/components';
 
 const AboutPage = () => (
 	<div>
 		<div>
-			<p contentEditable={true} onInput={() => console.log('!!!')}>
-				Default text.
-			</p>
+			<EditableText />
 		</div>
 		<div>
 			<Button>Default</Button>
