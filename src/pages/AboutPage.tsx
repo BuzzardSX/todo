@@ -1,15 +1,5 @@
 import { Button, Text } from '~/libs/react/components';
 
-interface EditableTextProps {
-	content: string;
-}
-
-const EditableText = ({ content }: EditableTextProps) => {
-	return (
-		<div contentEditable />
-	);
-};
-
 const AboutPage = () => (
 	<div>
 		<div>
