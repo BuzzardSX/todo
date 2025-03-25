@@ -1,5 +1,6 @@
 export {
 	Button,
+	EditableText,
 	Modal,
 	Text,
 	Theme
