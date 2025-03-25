@@ -1,5 +1,5 @@
 interface EditableTextProps {
-	content: string;
+	content?: string;
 }
 
 const EditableText = ({ content }: EditableTextProps) => {
