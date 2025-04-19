@@ -1,5 +1,4 @@
 export {
-	Button,
 	EditableText,
 	Modal,
 	Text,

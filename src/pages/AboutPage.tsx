@@ -1,4 +1,5 @@
-import { Button, EditableText, Text } from '~/libs/react/components';
+import { EditableText, Text } from '~/libs/react/components';
+import Button from '~/libs/react/components/Button';
 
 const AboutPage = () => (
 	<div>
