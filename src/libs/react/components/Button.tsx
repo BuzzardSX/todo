@@ -4,7 +4,7 @@ import style from './button.module.css';
 
 const Button = ({ children, danger = false, type = 'default' }: ButtonProps) => {
 	const className = classNames(style.root, {
-		[style.primary]: danger,
+		[style.danger]: danger,
 		[style.primary]: type == 'primary',
 	});
 
