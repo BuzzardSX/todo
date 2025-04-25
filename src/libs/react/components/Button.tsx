@@ -14,7 +14,7 @@ const Button = ({ children, type = 'default' }: ButtonProps) => {
 	);
 }
 
-export type ButtonType = 'default' | 'primary' | 'text';
+export type ButtonType = 'default' | 'link' | 'primary' | 'text';
 
 export interface ButtonProps {
 	children: ReactNode;
