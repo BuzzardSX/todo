@@ -5,11 +5,17 @@ import style from './button.module.css';
 const Button = ({
 	children,
 	type = 'default'
-}: ButtonProps) => (
-	<button className={classNames(style.root, { [style.primary]: type == 'primary' })}>
-		{children}
-	</button>
-);
+}: ButtonProps) => {
+	const className = classNames(style.root, {
+		[style.primary]: type == 'primary'
+	});
+
+	return (
+		<button className={className}>
+			{children}
+		</button>
+	);
+}
 
 export type ButtonType = 'default' | 'primary';
 
