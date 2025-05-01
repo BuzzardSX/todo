@@ -12,4 +12,6 @@ export const primary: Story = {
 	args: {
 		children: 'Primary'
 	}
-}
+};
+
+export default meta;
