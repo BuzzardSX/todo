@@ -1,5 +1,5 @@
 .root {
 	background-color: transparent;
 	border-color: var(--border-color);
-	color: white;
+	color: (--color);
 }
