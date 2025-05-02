@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react';
+import { type ReactNode, useState } from 'react';
 import { createPortal } from 'react-dom';
 import style from './DatePicker.module.css';
 
@@ -18,11 +18,15 @@ const DatePicker = ({
 	size = 'middle',
 	suffix = null,
 	...props
-}: DatePickerProps) => (
-	<>
-		<input className={style.root} {...props} />
-		{createPortal(<div className={popupClassName}>Popup</div>, document.body)}
-	</>
-);
+}: DatePickerProps) => {
+	const [open, setOpen] = useState(false);
+
+	return (
+		<>
+			<input className={style.root} {...props} />
+			{createPortal(<div className={`${popupClassName}`}>Popup</div>, document.body)}
+		</>
+	);
+};
 
 export default DatePicker;
