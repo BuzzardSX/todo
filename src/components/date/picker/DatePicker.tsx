@@ -1,6 +1,6 @@
 import { type ReactNode, useState } from 'react';
 import style from './DatePicker.module.css';
-import DatePickerPopup from './DatePickerPopup';
+import { DatePickerPopup } from './ui';
 
 type DatePickerSize = 'large' | 'middle' | 'small';
 
