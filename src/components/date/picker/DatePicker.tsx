@@ -9,7 +9,7 @@ interface DatePickerProps {
 	suffix?: ReactNode;
 }
 
-const DatePicker = ({ placeholder, size, suffix }: DatePickerProps) => (
+const DatePicker = ({ placeholder, size = 'middle', suffix }: DatePickerProps) => (
 	<input className={style.root} placeholder={placeholder} />
 );
 
