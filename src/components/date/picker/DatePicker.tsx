@@ -40,7 +40,7 @@ const DatePicker = ({
 		<>
 			<input className={cx(style.root, className)} onFocus={focusHandler} {...props} />
 
-			<DatePickerPopup open={open}>
+			<DatePickerPopup onClick={() => setOpen(false)} open={open}>
 				{new Date().toDateString()}
 			</DatePickerPopup>
 		</>
