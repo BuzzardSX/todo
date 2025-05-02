@@ -7,19 +7,21 @@ type DatePickerSize = 'large' | 'middle' | 'small';
 interface DatePickerProps {
 	className?: string;
 	placeholder?: string;
+	popupClassName?: string;
 	size?: DatePickerSize;
 	suffix?: ReactNode;
 }
 
 const DatePicker = ({
 	className,
-	placeholder,
+	popupClassName,
 	size = 'middle',
-	suffix = null
+	suffix = null,
+	...props
 }: DatePickerProps) => (
 	<>
-		<input className={style.root} placeholder={placeholder} />
-		{createPortal(<div>Popup</div>, document.body)}
+		<input className={style.root} {...props} />
+		{createPortal(<div className={popupClassName}>Popup</div>, document.body)}
 	</>
 );
 
