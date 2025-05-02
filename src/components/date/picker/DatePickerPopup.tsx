@@ -1,3 +1,4 @@
+import cx from 'classnames';
 import type { ReactNode } from 'react';
 import { createPortal } from 'react-dom';
 import style from './DatePickerPopup.module.css';
@@ -10,7 +11,7 @@ interface DatePickerPopupProps {
 
 const DatePickerPopup = ({ children, className, open }: DatePickerPopupProps) => {
 	return createPortal(
-		<div className={`${style.root} ${open ? style.open : ''} ${className}`}>
+		<div className={cx(style.root, { [style.open]: open }, className)}>
 			{children}
 		</div>,
 		document.body
