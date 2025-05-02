@@ -25,7 +25,7 @@ const DatePicker = ({
 		<>
 			<input className={style.root} {...props} />
 
-			<DatePickerPopup>Popup</DatePickerPopup>
+			<DatePickerPopup open={open}>Popup</DatePickerPopup>
 		</>
 	);
 };
