@@ -1,8 +1,12 @@
 import { EditableText, Text } from '~/libs/react/components';
 import Button from '~/libs/react/components/Button';
+import HeadOutlet from '~/libs/react/components/HeadOutlet';
 
 const AboutPage = () => (
 	<div>
+		<HeadOutlet>
+			WTF
+		</HeadOutlet>
 		<div>
 			<EditableText />
 		</div>
