@@ -1,3 +1,4 @@
+import cx from 'classnames';
 import { type ReactNode, useState } from 'react';
 import style from './DatePicker.module.css';
 import { DatePickerPopup } from './ui';
@@ -26,7 +27,7 @@ const DatePicker = ({
 
 	return (
 		<>
-			<input className={style.root} onFocus={focusHandler} {...props} />
+			<input className={cx(style.root, className)} onFocus={focusHandler} {...props} />
 
 			<DatePickerPopup open={open}>Popup</DatePickerPopup>
 		</>
