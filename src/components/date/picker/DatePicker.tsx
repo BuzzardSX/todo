@@ -1,5 +1,5 @@
 import cx from 'classnames';
-import { type ReactNode, useState } from 'react';
+import { type FocusEventHandler, type ReactNode, useState } from 'react';
 import style from './DatePicker.module.css';
 import { DatePickerPopup } from './ui';
 
@@ -16,6 +16,7 @@ interface DatePickerProps {
 
 const DatePicker = ({
 	className,
+	onFocus,
 	popupClassName,
 	size = 'middle',
 	suffix = null,
@@ -23,7 +24,11 @@ const DatePicker = ({
 }: DatePickerProps) => {
 	const [open, setOpen] = useState(false);
 
-	const focusHandler = () => setOpen(true);
+	const focusHandler: FocusEventHandler<HTMLInputElement> = () => {
+		setOpen(true);
+
+		onFocus?.();
+	};
 
 	return (
 		<>
