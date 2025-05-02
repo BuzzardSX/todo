@@ -6,6 +6,7 @@ type DatePickerSize = 'large' | 'middle' | 'small';
 
 interface DatePickerProps {
 	className?: string;
+	onFocus?: () => void;
 	placeholder?: string;
 	popupClassName?: string;
 	size?: DatePickerSize;
@@ -21,9 +22,11 @@ const DatePicker = ({
 }: DatePickerProps) => {
 	const [open, setOpen] = useState(false);
 
+	const focusHandler = () => setOpen(true);
+
 	return (
 		<>
-			<input className={style.root} {...props} />
+			<input className={style.root} onFocus={focusHandler} {...props} />
 
 			<DatePickerPopup open={open}>Popup</DatePickerPopup>
 		</>
