@@ -1,6 +1,6 @@
 import { type ReactNode, useState } from 'react';
-import { createPortal } from 'react-dom';
 import style from './DatePicker.module.css';
+import DatePickerPopup from './DatePickerPopup';
 
 type DatePickerSize = 'large' | 'middle' | 'small';
 
@@ -24,7 +24,8 @@ const DatePicker = ({
 	return (
 		<>
 			<input className={style.root} {...props} />
-			{createPortal(<div className={`${popupClassName}`}>Popup</div>, document.body)}
+
+			<DatePickerPopup>Popup</DatePickerPopup>
 		</>
 	);
 };
