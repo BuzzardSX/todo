@@ -2,7 +2,7 @@ import DatePicker from '~/components/date/picker'
 
 const AboutPage = () => (
 	<div>
-		<DatePicker />
+		<DatePicker placeholder='Select date' />
 	</div>
 );
 

@@ -1,5 +1,11 @@
 import style from './DatePicker.module.css';
 
-const DatePicker = () => <input className={style.root} />;
+interface DatePickerProps {
+	placeholder?: string;
+}
+
+const DatePicker = ({ placeholder }: DatePickerProps) => (
+	<input className={style.root} placeholder={placeholder} />
+);
 
 export default DatePicker;
