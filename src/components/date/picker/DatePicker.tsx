@@ -1,6 +1,8 @@
+import style from './DatePicker.module.css';
+
 const DatePicker = () => {
 	return (
-		<input />
+		<input className={style.root} />
 	);
 };
 
