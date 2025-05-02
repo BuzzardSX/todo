@@ -14,6 +14,7 @@ interface DatePickerProps {
 	onFocus?: () => void;
 	placeholder?: string;
 	popupClassName?: string;
+	showNow?: boolean;
 	size?: DatePickerSize;
 	suffix?: ReactNode;
 }
@@ -22,6 +23,7 @@ const DatePicker = ({
 	className,
 	onFocus,
 	popupClassName,
+	showNow = false,
 	size = 'middle',
 	suffix = null,
 	...props
