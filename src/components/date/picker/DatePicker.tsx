@@ -1,10 +1,15 @@
+import type { ReactNode } from 'react';
 import style from './DatePicker.module.css';
+
+type DatePickerSize = 'large' | 'middle' | 'small';
 
 interface DatePickerProps {
 	placeholder?: string;
+	size?: DatePickerSize;
+	suffix?: ReactNode;
 }
 
-const DatePicker = ({ placeholder }: DatePickerProps) => (
+const DatePicker = ({ placeholder, size, suffix }: DatePickerProps) => (
 	<input className={style.root} placeholder={placeholder} />
 );
 
