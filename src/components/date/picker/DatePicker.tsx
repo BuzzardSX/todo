@@ -3,7 +3,7 @@ import { type ReactNode, useState } from 'react';
 import Input from '~/components/input';
 import Popup from '~/components/popup';
 import style from './DatePicker.module.css';
-import { DatePickerPanel } from './ui';
+import Calendar from './calendar';
 
 type DatePickerSize = 'large' | 'middle' | 'small';
 
@@ -55,7 +55,7 @@ const DatePicker = ({
 			</div>
 
 			<Popup className={popupClassName} onClick={popupClickHandler} open={open}>
-				<DatePickerPanel />
+				<Calendar />
 			</Popup>
 		</>
 	);
