@@ -36,11 +36,13 @@ const DatePicker = ({
 		onFocus?.();
 	};
 
+	const popupClickHandler = () => setOpen(false);
+
 	return (
 		<>
 			<input className={cx(style.root, className)} onFocus={focusHandler} {...props} />
 
-			<DatePickerPopup onClick={() => setOpen(false)} open={open}>
+			<DatePickerPopup onClick={popupClickHandler} open={open}>
 				<DatePickerPanel />
 			</DatePickerPopup>
 		</>
