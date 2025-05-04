@@ -15,9 +15,9 @@ const Button = ({ children, danger = false, type = 'default' }: ButtonProps) => 
 	);
 }
 
-export type ButtonType = 'default' | 'link' | 'primary' | 'text';
+type ButtonType = 'default' | 'link' | 'primary' | 'text';
 
-export interface ButtonProps {
+interface ButtonProps {
 	children: ReactNode;
 	danger?: boolean;
 	type?: ButtonType;
