@@ -16,7 +16,7 @@ const meta = {
 
 type Story = StoryObj<typeof meta>;
 
-export const defaultButton: Story = {
+export const basic: Story = {
 	args: {
 		children: 'Default'
 	}
@@ -24,7 +24,8 @@ export const defaultButton: Story = {
 
 export const primary: Story = {
 	args: {
-		children: 'Primary'
+		children: 'Primary',
+		type: 'primary'
 	}
 };
 
