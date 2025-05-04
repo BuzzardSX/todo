@@ -17,7 +17,14 @@ type Story = StoryObj<typeof meta>;
 
 export const antLike: Story = {
 	args: {
+		placeholder: 'Select date'
+	}
+};
+
+export const large: Story = {
+	args: {
 		placeholder: 'Select date',
+		size: 'large'
 	}
 };
 
