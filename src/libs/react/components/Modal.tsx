@@ -1,5 +1,5 @@
+import type { ReactNode } from 'react';
 import style from './modal.module.css';
-import type { ModalProps } from './reactComponents';
 
 const Modal = ({ children, open }: ModalProps) => {
 	const className = `${style.root} ${open && style.open}`;
@@ -9,6 +9,11 @@ const Modal = ({ children, open }: ModalProps) => {
 			{children}
 		</div>
 	);
+}
+
+interface ModalProps {
+	children?: ReactNode;
+	open: boolean;
 }
 
 export default Modal;
