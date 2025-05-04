@@ -41,7 +41,9 @@ const DatePicker = ({
 
 	return (
 		<>
-			<input className={cx(style.root, className)} onFocus={focusHandler} {...props} />
+			<div className={cx(style.root, className)}>
+				<input onFocus={focusHandler} {...props} />
+			</div>
 
 			<Popup onClick={popupClickHandler} open={open}>
 				<DatePickerPanel />
