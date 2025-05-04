@@ -1,10 +1,10 @@
-import DatePickerCell from './DatePickerCell';
+import CalendarCell from './CalendarCell';
 
 const week = [1, 2, 3, 4, 5, 6, 7];
 
 const DatePickerRow = () => (
 	<tr>
-		{week.map(() => <DatePickerCell />)}
+		{week.map(() => <CalendarCell />)}
 	</tr>
 );
 
