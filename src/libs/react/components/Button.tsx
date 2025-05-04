@@ -2,6 +2,14 @@ import cx from 'classnames';
 import type { ReactNode } from 'react';
 import style from './button.module.css';
 
+type ButtonType = 'default' | 'link' | 'primary' | 'text';
+
+interface ButtonProps {
+	children: ReactNode;
+	danger?: boolean;
+	type?: ButtonType;
+}
+
 const Button = ({ children, danger = false, type = 'default' }: ButtonProps) => {
 	const className = cx(style.root, {
 		[style.danger]: danger,
@@ -13,14 +21,6 @@ const Button = ({ children, danger = false, type = 'default' }: ButtonProps) => 
 			{children}
 		</button>
 	);
-}
-
-type ButtonType = 'default' | 'link' | 'primary' | 'text';
-
-interface ButtonProps {
-	children: ReactNode;
-	danger?: boolean;
-	type?: ButtonType;
 }
 
 export default Button;
