@@ -9,6 +9,10 @@
 	padding: 4px;
 }
 
+.root:hover {
+	border-color: #3c89e8;
+}
+
 .large {
 	border-radius: 8px;
 	line-height: 24px;
