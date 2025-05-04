@@ -1,15 +1,12 @@
+import cx from 'classnames';
 import type { ReactNode } from 'react';
 import style from './modal.module.css';
 
-const Modal = ({ children, open }: ModalProps) => {
-	const className = `${style.root} ${open && style.open}`;
-
-	return (
-		<div className={className}>
-			{children}
-		</div>
-	);
-}
+const Modal = ({ children, open }: ModalProps) => (
+	<div className={cx(style.root, { [style.open]: open })}>
+		{children}
+	</div>
+);
 
 interface ModalProps {
 	children?: ReactNode;
