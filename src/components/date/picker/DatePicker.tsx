@@ -4,8 +4,9 @@ import {
 	type ReactNode,
 	useState
 } from 'react';
+import Popup from '~/components/popup'
 import style from './DatePicker.module.css';
-import { DatePickerPanel, DatePickerPopup } from './ui';
+import { DatePickerPanel } from './ui';
 
 type DatePickerSize = 'large' | 'middle' | 'small';
 
@@ -42,9 +43,9 @@ const DatePicker = ({
 		<>
 			<input className={cx(style.root, className)} onFocus={focusHandler} {...props} />
 
-			<DatePickerPopup onClick={popupClickHandler} open={open}>
+			<Popup onClick={popupClickHandler} open={open}>
 				<DatePickerPanel />
-			</DatePickerPopup>
+			</Popup>
 		</>
 	);
 };
