@@ -1,8 +1,4 @@
-export {
-	EditableText,
-	Modal,
-	Theme
-} from './reactComponents';
+export { EditableText, Theme } from './reactComponents';
 
 export type {
 	ButtonProps,
