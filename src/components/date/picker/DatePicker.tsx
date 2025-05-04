@@ -5,7 +5,7 @@ import {
 	useState
 } from 'react';
 import style from './DatePicker.module.css';
-import { DatePickerPopup } from './ui';
+import { DatePickerPanel, DatePickerPopup } from './ui';
 
 type DatePickerSize = 'large' | 'middle' | 'small';
 
@@ -41,7 +41,7 @@ const DatePicker = ({
 			<input className={cx(style.root, className)} onFocus={focusHandler} {...props} />
 
 			<DatePickerPopup onClick={() => setOpen(false)} open={open}>
-				{new Date().toDateString()}
+				<DatePickerPanel />
 			</DatePickerPopup>
 		</>
 	);
