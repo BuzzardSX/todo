@@ -44,7 +44,11 @@ const DatePicker = ({
 	return (
 		<>
 			<div className={cx(style.root, className)}>
-				<input className={cx(style.input, inputClassName)} onFocus={focusHandler} {...props} />
+				<input
+					className={cx(style.input, inputClassName)}
+					onFocus={focusHandler}
+					{...props}
+				/>
 				<div>{suffix}</div>
 			</div>
 
