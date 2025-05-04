@@ -1,8 +1,10 @@
 .root {
+	background-color: inherit;
 	border-color: transparent;
 	border-radius: 4px;
 	border-style: solid;
 	border-width: 1px;
+	color: light-dark(black, var(--content-color));
 	font-family: var(--font-family);
 }
 
