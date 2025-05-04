@@ -46,7 +46,7 @@ const DatePicker = ({
 				<div>{suffix}</div>
 			</div>
 
-			<Popup onClick={popupClickHandler} open={open}>
+			<Popup className={popupClassName} onClick={popupClickHandler} open={open}>
 				<DatePickerPanel />
 			</Popup>
 		</>
