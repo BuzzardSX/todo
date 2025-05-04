@@ -1,10 +1,7 @@
 import cx from 'classnames';
-import {
-	type FocusEventHandler,
-	type ReactNode,
-	useState
-} from 'react';
-import Popup from '~/components/popup'
+import { type ReactNode, useState } from 'react';
+import Input from '~/components/input';
+import Popup from '~/components/popup';
 import style from './DatePicker.module.css';
 import { DatePickerPanel } from './ui';
 
@@ -35,7 +32,7 @@ const DatePicker = ({
 }: DatePickerProps) => {
 	const [open, setOpen] = useState(false);
 
-	const focusHandler: FocusEventHandler<HTMLInputElement> = () => {
+	const focusHandler = () => {
 		setOpen(true);
 
 		onFocus?.();
@@ -46,8 +43,8 @@ const DatePicker = ({
 	return (
 		<>
 			<div className={cx(style.root, className)}>
-				<input
-					className={cx(style.input, inputClassName)}
+				<Input
+					className={inputClassName}
 					onFocus={focusHandler}
 					{...props}
 				/>
