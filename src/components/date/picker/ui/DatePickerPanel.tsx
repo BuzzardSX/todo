@@ -10,7 +10,7 @@ const DatePickerPanel = () => {
 		<table>
 			{month.map(() => (
 				<tr>
-					{week.map((n) => (
+					{week.map(() => (
 						<td>{new Date(now).getDate()}</td>
 					))}
 				</tr>
