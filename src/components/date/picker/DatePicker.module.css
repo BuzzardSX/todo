@@ -19,3 +19,7 @@
 	border-radius: 4px;
 	padding: 0;
 }
+
+.suffix {
+	display: inline-block;
+}

@@ -27,7 +27,7 @@ const DatePicker = ({
 	popupClassName,
 	showNow = false,
 	size = 'middle',
-	suffix = null,
+	suffix = <>&#128197;</>,
 	...props
 }: DatePickerProps) => {
 	const [open, setOpen] = useState(false);
@@ -51,7 +51,7 @@ const DatePicker = ({
 					onFocus={focusHandler}
 					{...props}
 				/>
-				<div>{suffix}</div>
+				<div className={style.suffix}>{suffix}</div>
 			</div>
 
 			<Popup className={popupClassName} onClick={popupClickHandler} open={open}>
