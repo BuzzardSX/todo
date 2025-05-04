@@ -1,7 +1,3 @@
-.large {
-	line-height: 24px;
-}
-
 .root {
 	background-color: var(--input-background-color);
 	border-color: var(--border-color);
@@ -9,4 +5,8 @@
 	border-width: var(--border-width);
 	color: var(--color);
 	line-height: 22px;
+}
+
+.large {
+	line-height: 24px;
 }
