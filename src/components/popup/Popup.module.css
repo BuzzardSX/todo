@@ -1,0 +1,9 @@
+.root {
+	background-color: chocolate;
+	display: none;
+	position: absolute;
+}
+
+.open {
+	display: block;
+}
