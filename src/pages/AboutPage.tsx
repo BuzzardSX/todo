@@ -1,9 +1,3 @@
-import DatePicker from '~/components/date/picker'
-
-const AboutPage = () => (
-	<div>
-		<DatePicker placeholder='Select date' />
-	</div>
-);
+const AboutPage = () => <div />;
 
 export default AboutPage;
