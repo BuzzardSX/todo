@@ -9,12 +9,10 @@ interface DatePickerPopupProps {
 	open: boolean;
 }
 
-const DatePickerPopup = ({ children, className, onClick, open }: DatePickerPopupProps) => {
-	return (
-		<div className={cx(style.root, { [style.open]: open }, className)} onClick={onClick}>
-			{children}
-		</div>
-	);
-};
+const DatePickerPopup = ({ children, className, onClick, open }: DatePickerPopupProps) => (
+	<div className={cx(style.root, { [style.open]: open }, className)} onClick={onClick}>
+		{children}
+	</div>
+);
 
 export default DatePickerPopup;
