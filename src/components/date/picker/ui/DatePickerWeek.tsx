@@ -1,17 +1,11 @@
-import { useDatePickerNow } from '../hooks';
+import DatePickerDate from './DatePickerDate';
 
 const week = [1, 2, 3, 4, 5, 6, 7];
 
-const DatePickerWeek = () => {
-	const now = useDatePickerNow();
-
-	return (
-		<tr>
-			{week.map(() => (
-				<td>{new Date(now).getDate()}</td>
-			))}
-		</tr>
-	);
-};
+const DatePickerWeek = () => (
+	<tr>
+		{week.map(() => <DatePickerDate />)}
+	</tr>
+);
 
 export default DatePickerWeek;
