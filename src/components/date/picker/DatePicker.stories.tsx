@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Theme } from '~/libs/react/components';
+import Theme from '~/libs/react/components/Theme';
 import DatePicker from './DatePicker';
 
 const meta: Meta<typeof DatePicker> = {
