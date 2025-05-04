@@ -1,7 +1,6 @@
 export {
 	EditableText,
 	Modal,
-	Text,
 	Theme
 } from './reactComponents';
 
