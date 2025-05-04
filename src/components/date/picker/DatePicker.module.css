@@ -5,3 +5,7 @@
 	border-width: var(--border-width);
 	color: var(--color);
 }
+
+.input {
+	background-color: inherit;
+}
