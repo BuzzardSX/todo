@@ -1,5 +1,6 @@
 .root {
-	background-color: chocolate;
+	background-color: rgb(31, 31, 31);
+	color: var(--color);
 	display: none;
 	position: absolute;
 }
