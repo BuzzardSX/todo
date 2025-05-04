@@ -42,7 +42,10 @@ const DatePicker = ({
 
 	return (
 		<>
-			<div className={cx(style.root, { [style.large]: size == 'large' }, className)}>
+			<div className={cx(style.root, {
+				[style.large]: size == 'large',
+				[style.small]: size == 'small'
+			}, className)}>
 				<Input
 					className={inputClassName}
 					onFocus={focusHandler}

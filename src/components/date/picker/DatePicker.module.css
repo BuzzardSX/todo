@@ -5,8 +5,14 @@
 	border-width: var(--border-width);
 	color: var(--color);
 	line-height: 22px;
+	padding: 4px;
 }
 
 .large {
 	line-height: 24px;
+	padding: 7px;
+}
+
+.small {
+	padding: 0;
 }
