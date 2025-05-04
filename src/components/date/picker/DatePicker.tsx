@@ -12,6 +12,7 @@ type DatePickerSize = 'large' | 'middle' | 'small';
 
 interface DatePickerProps {
 	className?: string;
+	inputClassName?: string;
 	onFocus?: () => void;
 	placeholder?: string;
 	popupClassName?: string;
@@ -22,6 +23,7 @@ interface DatePickerProps {
 
 const DatePicker = ({
 	className,
+	inputClassName,
 	onFocus,
 	popupClassName,
 	showNow = false,
@@ -42,7 +44,7 @@ const DatePicker = ({
 	return (
 		<>
 			<div className={cx(style.root, className)}>
-				<input className={cx(style.input)} onFocus={focusHandler} {...props} />
+				<input className={cx(style.input, inputClassName)} onFocus={focusHandler} {...props} />
 				<div>{suffix}</div>
 			</div>
 
