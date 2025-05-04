@@ -1,6 +1,6 @@
 import cx from 'classnames';
 import type { ReactNode } from 'react';
-import style from './SButton.module.css';
+import style from './Button.module.css';
 
 type ButtonType = 'default' | 'link' | 'primary' | 'text';
 
