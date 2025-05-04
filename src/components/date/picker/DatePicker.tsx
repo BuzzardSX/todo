@@ -13,6 +13,7 @@ type DatePickerSize = 'large' | 'middle' | 'small';
 interface DatePickerProps {
 	className?: string;
 	inputClassName?: string;
+	onChange?: () => void;
 	onFocus?: () => void;
 	placeholder?: string;
 	popupClassName?: string;
@@ -24,6 +25,7 @@ interface DatePickerProps {
 const DatePicker = ({
 	className,
 	inputClassName,
+	onChange,
 	onFocus,
 	popupClassName,
 	showNow = false,
