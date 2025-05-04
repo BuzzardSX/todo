@@ -1,9 +1,9 @@
-import classNames from 'classnames';
+import cx from 'classnames';
 import type { ReactNode } from 'react';
 import style from './button.module.css';
 
 const Button = ({ children, danger = false, type = 'default' }: ButtonProps) => {
-	const className = classNames(style.root, {
+	const className = cx(style.root, {
 		[style.danger]: danger,
 		[style.primary]: type == 'primary',
 	});
