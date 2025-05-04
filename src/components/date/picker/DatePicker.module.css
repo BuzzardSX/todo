@@ -10,7 +10,7 @@
 }
 
 .root:hover {
-	border-color: #3c89e8;
+	border-color: var(--hover-color);
 }
 
 .large {
