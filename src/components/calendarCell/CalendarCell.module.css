@@ -1,3 +1,13 @@
+.root {
+	border-color: transparent;
+	border-style: solid;
+	border-width: 1px;
+}
+
 .root:hover {
 	background-color: rgba(255, 255, 255, 0.08);
+}
+
+.today {
+	border-color: mediumslateblue;
 }
