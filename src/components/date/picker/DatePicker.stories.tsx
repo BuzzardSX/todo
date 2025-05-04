@@ -15,7 +15,7 @@ const meta: Meta<typeof DatePicker> = {
 
 type Story = StoryObj<typeof meta>;
 
-export const antLike: Story = {
+export const basic: Story = {
 	args: {
 		placeholder: 'Select date'
 	}
@@ -27,5 +27,12 @@ export const large: Story = {
 		size: 'large'
 	}
 };
+
+export const small: Story = {
+	args: {
+		placeholder: 'Select date',
+		size: 'small'
+	}
+}
 
 export default meta;
