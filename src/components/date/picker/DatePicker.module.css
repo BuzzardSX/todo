@@ -1,6 +1,7 @@
 .root {
 	background-color: var(--input-background-color);
 	border-color: var(--border-color);
+	border-radius: 6px;
 	border-style: var(--border-style);
 	border-width: var(--border-width);
 	color: var(--color);
@@ -9,10 +10,12 @@
 }
 
 .large {
+	border-radius: 8px;
 	line-height: 24px;
 	padding: 7px;
 }
 
 .small {
+	border-radius: 4px;
 	padding: 0;
 }
