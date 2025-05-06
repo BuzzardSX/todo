@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import style from './text.module.css';
+import style from './Ttext.module.css';
 
 const Text = ({ children }: TextProps) => (
 	<div className={style.root}>{children}</div>

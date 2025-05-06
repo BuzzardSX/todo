@@ -1,5 +1,5 @@
 import type { CSSProperties, ReactNode } from 'react';
-import style from './theme.module.css';
+import style from './Ttheme.module.css';
 
 interface ThemeProps {
 	children: ReactNode;
