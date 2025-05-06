@@ -8,6 +8,6 @@ interface ThemeProps {
 
 const Theme = ({ children, ...props }: ThemeProps) => (
 	<div className={style.root} style={props.style}>{children}</div>
-)
+);
 
 export default Theme;
