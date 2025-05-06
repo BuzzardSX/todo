@@ -1,6 +1,6 @@
 import cx from 'classnames';
 import type { ReactNode } from 'react';
-import style from './modal.module.css';
+import style from './Mmodal.module.css';
 
 interface ModalProps {
 	children?: ReactNode;
