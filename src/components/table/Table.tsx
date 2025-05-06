@@ -1,3 +1,7 @@
+interface TableProps<T> {
+	data: T[];
+}
+
 const Table = <T,>({ data }: TableProps<T>) => {
 	return (
 		<table>
@@ -7,9 +11,5 @@ const Table = <T,>({ data }: TableProps<T>) => {
 		</table>
 	);
 };
-
-export interface TableProps<T> {
-	data: T[];
-}
 
 export default Table;
