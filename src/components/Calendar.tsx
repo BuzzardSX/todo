@@ -1,4 +1,4 @@
-import CalendarRow from '~/components/calendarRow';
+import CalendarRow from './calendarRow';
 import style from './Calendar.module.css';
 
 const Calendar = () => (
