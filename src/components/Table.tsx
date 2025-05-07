@@ -2,14 +2,12 @@ interface TableProps<T> {
 	data: T[];
 }
 
-const Table = <T,>({ data }: TableProps<T>) => {
-	return (
-		<table>
-			<thead></thead>
-			<tbody></tbody>
-			<tfoot></tfoot>
-		</table>
-	);
-};
+const Table = <T,>({ data }: TableProps<T>) => (
+	<table>
+		<thead></thead>
+		<tbody></tbody>
+		<tfoot></tfoot>
+	</table>
+);
 
 export default Table;
