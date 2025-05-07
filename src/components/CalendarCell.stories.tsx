@@ -21,4 +21,10 @@ export const basic: Story = {
 	}
 };
 
+export const today: Story = {
+	args: {
+		today: true
+	}
+};
+
 export default meta;
