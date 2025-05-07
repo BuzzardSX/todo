@@ -3,7 +3,7 @@ import style from './Calendar.module.css';
 
 const Calendar = () => (
 	<div className={style.root}>
-		<table>
+		<table className={style.table}>
 			<CalendarRow />
 			<CalendarRow />
 			<CalendarRow />
