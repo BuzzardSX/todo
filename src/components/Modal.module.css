@@ -1,5 +1,6 @@
 .root {
 	display: none;
+	font-family: var(--font-family);
 }
 
 .open {
