@@ -1,6 +1,11 @@
 {
 	"editor.insertSpaces": false,
 	"editor.tabSize": 4,
+	"explorer.fileNesting.enabled": true,
+	"explorer.fileNesting.expand": true,
+	"explorer.fileNesting.patterns": {
+		"*.tsx": "${capture}.stories.tsx, ${capture}.module.css"
+	},
 	"files.exclude": {
 		"**/node_modules": true
 	},
