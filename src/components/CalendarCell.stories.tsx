@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import Theme from '~/components/theme';
+import Theme from './theme';
 import CalendarCell from './CalendarCell';
 
 const meta: Meta<typeof CalendarCell> = {
