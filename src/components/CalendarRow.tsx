@@ -1,5 +1,5 @@
 import style from './CalendarRow.module.css';
-import CalendarCell from '../CalendarCell';
+import CalendarCell from './CalendarCell';
 
 const CalendarRow = () => (
 	<tr className={style.root}>
