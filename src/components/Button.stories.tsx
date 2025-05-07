@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import Theme from './theme';
+import Theme from './Theme';
 import Button from './Button';
 
 const meta = {

@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import Theme from '~/components/theme';
 import CalendarRow from './CalendarRow';
+import Theme from '../Theme';
 
 const meta: Meta<typeof CalendarRow> = {
 	component: CalendarRow,
