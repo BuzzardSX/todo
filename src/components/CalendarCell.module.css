@@ -5,6 +5,7 @@
 	border-style: solid;
 	border-width: 1px;
 	color: light-dark(black, var(--content-color));
+	cursor: pointer;
 	font-family: var(--font-family);
 }
 
