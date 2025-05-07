@@ -1,9 +1,9 @@
 import cx from 'classnames';
 import { type ReactNode, useState } from 'react';
 import Input from '~/components/input';
-import Popup from '~/components/popup';
 import style from './DatePicker.module.css';
 import Calendar from '../Calendar';
+import Popup from '../Popup';
 
 type DatePickerSize = 'large' | 'middle' | 'small';
 
