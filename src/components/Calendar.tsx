@@ -1,5 +1,5 @@
-import CalendarRow from './CalendarRow';
 import style from './Calendar.module.css';
+import { CalendarRow } from './components';
 
 const Calendar = () => (
 	<div className={style.root}>
