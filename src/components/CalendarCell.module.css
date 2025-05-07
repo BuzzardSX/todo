@@ -7,6 +7,8 @@
 	color: light-dark(black, var(--content-color));
 	cursor: pointer;
 	font-family: var(--font-family);
+	min-width: 16px;
+	text-align: center;
 }
 
 .root:hover {
