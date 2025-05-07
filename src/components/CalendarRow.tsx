@@ -1,15 +1,30 @@
+import { Suspense } from 'react';
 import style from './CalendarRow.module.css';
-import CalendarCell from './CalendarCell';
+import { CalendarCell } from './components';
 
 const CalendarRow = () => (
 	<tr className={style.root}>
-		<CalendarCell />
-		<CalendarCell />
-		<CalendarCell />
-		<CalendarCell today />
-		<CalendarCell />
-		<CalendarCell />
-		<CalendarCell />
+		<Suspense fallback={null}>
+			<CalendarCell />
+		</Suspense>
+		<Suspense fallback={null}>
+			<CalendarCell />
+		</Suspense>
+		<Suspense fallback={null}>
+			<CalendarCell />
+		</Suspense>
+		<Suspense fallback={null}>
+			<CalendarCell today />
+		</Suspense>
+		<Suspense fallback={null}>
+			<CalendarCell />
+		</Suspense>
+		<Suspense fallback={null}>
+			<CalendarCell />
+		</Suspense>
+		<Suspense fallback={null}>
+			<CalendarCell />
+		</Suspense>
 	</tr>
 );
 
