@@ -14,7 +14,7 @@ const CalendarRow = () => (
 			<CalendarCell />
 		</Suspense>
 		<Suspense fallback={null}>
-			<CalendarCell today />
+			<CalendarCell />
 		</Suspense>
 		<Suspense fallback={null}>
 			<CalendarCell />
