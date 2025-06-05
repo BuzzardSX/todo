@@ -4,9 +4,7 @@ const config: StorybookConfig = {
 	stories: [
 		'../src/**/*.stories.tsx'
 	],
-	addons: [
-		'@storybook/addon-themes'
-	],
+	addons: [],
 	framework: {
 		name: '@storybook/react-vite',
 		options: {}
