@@ -18,14 +18,16 @@
 		"react-redux": "9.2.0"
 	},
 	"devDependencies": {
-		"@storybook/react": "8.6.12",
-		"@storybook/react-vite": "8.6.12",
+		"@storybook/react-vite": "9.0.5",
 		"@types/node": "22.15.30",
 		"@types/react": "19.1.6",
 		"@types/react-dom": "19.1.6",
 		"@vitejs/plugin-react": "4.5.1",
-		"storybook": "8.6.12",
+		"storybook": "9.0.5",
 		"typescript": "5.8.3",
 		"vite": "6.3.5"
+	},
+	"overrides": {
+		"storybook": "$storybook"
 	}
 }
